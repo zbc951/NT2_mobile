@@ -1,0 +1,294 @@
+//我的錢包
+.walletWrap {
+    width: 100%;
+    min-height: calc(100vh - 92px);
+    height: auto;
+    background: $backgroundColor_5;
+    padding-bottom: 10px;
+
+    //上半
+    .walletBox {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        background: $backgroundColor_2;
+
+        //漸層
+        .gradient {
+            background: $linear_4;
+            width: 100%;
+            height: auto;
+
+            .content {
+                width: 92vw;
+                height: auto;
+                margin: 0 auto 16px;
+                background: $backgroundColor_2;
+                border-radius: 1.5vw;
+                box-shadow: 0 0 5px 0 $boxshadow_2;
+
+                .amount {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    border-bottom: solid 1px $borderColor_12;
+
+                    .half {
+                        width: 50%;
+                        height: auto;
+                        box-sizing: border-box;
+                        padding: 12px 0 12px 15px;
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            color: $font-color_16;
+                            font-size: 15px;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            
+                            &.all {
+                                color: $font-color_21;
+                            }
+
+                            .icon {
+                                width: 4.27vw;
+                                height: 4.27vw;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        .money {
+                            color: $font-color_22;
+                            font-size: 25px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            height: 33px;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .details {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    border-bottom: solid 1px $borderColor_12;
+                    
+                    .items {
+                        display: flex;
+                        width: 50%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 0 6px;
+                        height: 10.67vw;
+                        border-right: solid 1px $borderColor_12;
+
+                        &:nth-of-type(2) {
+                            border: none;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: $font-color_14;
+                            white-space: nowrap;
+
+                            &:nth-of-type(1) {
+                                width: 40%;
+                                font-size: 14px;
+                                text-align: center;
+                            }
+
+                            &:nth-of-type(2) {
+                                width: 60%;
+                                text-align: right;
+                                box-sizing: border-box;
+                                padding: 0 5px;
+                            }
+
+                            &.mainWallet {
+                                color: $font-color_23;
+                            }
+                            &.limit {
+                                color: $font-color_16;
+                            }
+                            &.activeWallet {
+                                color: $font-color_24;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //轉存提
+        ul {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 12.8vw;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                i {
+                    display: block;
+                    width: 11.47vw;
+                    height: 11.47vw;
+                }
+
+                p {
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    color: $font-color_16;
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
+
+    //按鈕列
+    .btnBox {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        padding: 0 5px 10px;
+
+        button {
+            width: 46.4vw;
+            height: 10.67vw;
+            @include buttonStyle_6;
+
+            &:nth-of-type(1) {
+                border-radius: 1.5vw 0 0 1.5vw;
+            }
+            &:last-child {
+                border-radius: 0 1.5vw 1.5vw 0;
+            }
+        }
+    }
+
+    //錢包列
+    .walletList {
+        width: 100%;
+        height: auto;
+        background: $backgroundColor_2;
+
+        .forActive,
+        .forHistory,
+        .forPlatform {
+            padding-bottom: 15px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 8px 15px 0;
+                margin-bottom: 11px;
+                font-size: 13px;
+                letter-spacing: 1px;
+                color: $font-color_25;
+                font-weight: bold;
+
+                button {
+                    width: 18.93vw;
+                    height: 6.13vw;
+                    @include buttonStyle_2;
+                    font-size: 12px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                box-sizing: border-box;
+                max-height: 67.16vw;
+                padding: 0 3.6vw;
+                overflow: hidden;
+
+                &.active {
+                    max-height: none;
+                }
+
+                li {
+                    width: 30.66vw;
+                    min-height: 16.53vw;
+                    box-sizing: border-box;
+                    padding: 12px 0 0 11px;
+                    margin: 0 0.26vw 0.26vw 0;
+                    border: solid 1px $borderColor_13;
+                    border-radius: 1.5vw;
+
+                    &:nth-of-type(3n) {
+                        margin-right: 0;
+                    }
+
+                    div {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        color: $font-color_16;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                        font-size: 17px;
+                        color: $font-color_12;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .openBtn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: auto;
+                margin-top: 15px;
+
+                div {
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    color: $font-color_12;
+                    display: flex;
+                    align-items: center;
+
+                    &.active {
+
+                        .db_arrow {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .db_arrow {
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 9px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}

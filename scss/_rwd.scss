@@ -1,0 +1,30 @@
+@media only screen and (max-width: 320px){
+
+    //首頁下方遊戲選單icon刪除
+    .homeCenter {
+
+        .gameList {
+
+            div {
+                justify-content: center !important;
+    
+                i {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    //首頁轉存提+vip大小調整
+    .operate {
+        
+        .btnBox {
+            padding: 0 3% !important;
+
+            button {
+                width: 36px !important;
+                height: 36px !important;
+            }
+        }
+    }
+}
