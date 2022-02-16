@@ -3,7 +3,7 @@
     width: 100%;
     height: calc(100vh - 95px);
     overflow-y: auto;
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
     box-sizing: border-box;
     padding: 10px 0;
 
@@ -31,7 +31,7 @@
                 font-size: 14px;
                 letter-spacing: 1px;
                 font-weight: bold;
-                color: $font-color_28;
+                color: $font-color_3;
 
                 i {
                     width: 4.27vw;
@@ -42,7 +42,7 @@
 
             .amount {
                 font-size: 29px;
-                color: $font-color_22;
+                color: $font-color_12;
                 font-weight: bold;
             }
         }
@@ -69,7 +69,7 @@
             }
 
             .smallWord {
-                color: $font-color_34;
+                color: $font-color_13;
                 font-size: 12px;
                 font-weight: bold;
                 position: absolute;
@@ -105,7 +105,7 @@
         height: auto;
         box-sizing: border-box;
         padding: 10px 15px;
-        background: $backgroundColor_5;
+        background: $backgroundColor_4;
 
         ul {
             width: 100%;
@@ -143,7 +143,7 @@
             margin-bottom: 11px;
             font-size: 13px;
             letter-spacing: 1px;
-            color: $font-color_25;
+            color: $font-color_4;
             font-weight: bold;
 
             button {
@@ -173,7 +173,7 @@
                 box-sizing: border-box;
                 padding: 12px 0 0 11px;
                 margin: 0 0.26vw 0.26vw 0;
-                border: solid 1px $borderColor_13;
+                border: solid 1px $borderColor_1;
                 border-radius: 1.5vw;
 
                 &:nth-of-type(3n) {
@@ -183,7 +183,7 @@
                 div {
                     font-size: 12px;
                     letter-spacing: 1px;
-                    color: $font-color_16;
+                    color: $font-color_8;
                     font-weight: bold;
                 }
 

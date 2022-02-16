@@ -191,7 +191,7 @@
             background: none;
 
             p {
-                color: $font-color_9;
+                color: $font-color_1;
                 font-size: 14px;
             }
 
@@ -233,7 +233,7 @@
                 margin: 15px 0;
                 font-size: 14px;
                 font-weight: bold;
-                color: $font-color_9;
+                color: $font-color_1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -333,7 +333,7 @@
                 }
 
                 .must {
-                    color: $font-color_11;
+                    color: $font-color_9;
                     font-weight: bold;
                     font-size: 13px;
                 }
@@ -343,7 +343,7 @@
                 width: 77.33vw;
                 margin: 5px 0;
                 font-size: 12px;
-                color: $font-color_10;
+                color: $font-color_1;
             }
 
             .choose {
@@ -502,7 +502,7 @@
             width: 100%;
             height: auto;
             display: flex;
-            border-bottom: solid 1px $borderColor_5;
+            border-bottom: solid 1px $borderColor_1;
 
             li {
                 border-bottom: solid 2px transparent;
@@ -512,7 +512,7 @@
                 align-items: center;
 
                 &:active,&.active {
-                    border-color: $borderColor_6;
+                    border-color: $borderColor_3;
                 }
 
                 p {
@@ -523,7 +523,7 @@
                     font-weight: bold;
                     letter-spacing: 1px;
                     color: $font-color_14;
-                    border-right: solid 1px $borderColor_5;
+                    border-right: solid 1px $borderColor_1;
                 }
             }
         }
@@ -541,7 +541,7 @@
 
             li {
                 padding: 5px 0 18px 24px;
-                border-bottom: solid 1px $borderColor_5;
+                border-bottom: solid 1px $borderColor_1;
                 width: 100%;
                 height: auto;
                 box-sizing: border-box;
@@ -555,7 +555,7 @@
                     font-size: 12px;
                     letter-spacing: 1px;
                     margin-bottom: 9px;
-                    color: $font-color_15;
+                    color: $font-color_1;
                     font-weight: bold;
                 }
 
@@ -565,7 +565,7 @@
                     font-size: 14px;
                     font-weight: bold;
                     letter-spacing: 1px;
-                    color: $font-color_16;
+                    color: $font-color_8;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -686,14 +686,8 @@
                 width: 100%;
                 height: 9.87vw;
                 margin-bottom: 2.4vw;
-                @include buttonStyle_7;
-                font-size: 14px;
-                color: $font-color_27;
-                
-                &:active,&.active {
-                    background: $linear_5;
-                    color: $font-color_5;
-                }
+                @include buttonStyle_9;
+                color: $font-color_2;
 
                 &:last-child {
                     margin: 0;
@@ -808,7 +802,7 @@
             .point {
                 font-weight: bold;
                 font-size: 26px;
-                color: $font-color_28;
+                color: $font-color_3;
                 margin-top: 8px;
             }
         }
@@ -827,7 +821,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-bottom: solid 1px $borderColor_18;
+                border-bottom: solid 1px $borderColor_1;
 
                 .name {
                     display: flex;
@@ -835,7 +829,7 @@
                     justify-content: center;
                     width: 30.4vw;
                     height: 6.13vw;
-                    border-right: solid 1px $borderColor_18;
+                    border-right: solid 1px $borderColor_1;
                     font-size: 14px;
                     font-weight: bold;
                     color: $font-color_12;
@@ -877,7 +871,7 @@
                             height: 0;
                             border-style: solid;
                             border-width: 0 4px 6px 4px;
-                            border-color: $borderColor_24 transparent;
+                            border-color: $backgroundColor_6 transparent;
                         }
                     }
                 }

@@ -152,6 +152,9 @@ $(function(){
         $('.gameBox.lotteryBox li').attr('onclick',"callLottery()");
         $('.gameBox.boardBox li').attr('onclick',"callBoard()");
 
+        $('.operate button:eq(0)').attr('onclick',"window.location.href='./html/deposit.html'");
+        $('.operate button:eq(1)').attr('onclick',"window.location.href='./html/transfer.html'");
+        $('.operate button:eq(2)').attr('onclick',"window.location.href='./html/withdrawal.html'");
         $('.operate button:eq(3)').attr('onclick',"window.location.href='./html/vip.html'");
 
         $('footer li:nth-of-type(2)').attr('onclick',"window.location.href='./html/event.html'");

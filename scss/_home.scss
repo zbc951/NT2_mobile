@@ -136,7 +136,7 @@
                     font-weight: bold;
                     color: $font-color_5;
                     border-radius: 1.5vw;
-                    border: solid 1px $borderColor_7;
+                    border: solid 1px $borderColor_5;
                     display: flex;
                     align-items: center;
                     text-align: center;
@@ -201,7 +201,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: solid 1px $borderColor_2;
+            border: solid 1px $borderColor_1;
             border-radius: 1.5vw;
             box-sizing: border-box;
 
@@ -235,12 +235,12 @@
                 align-items: center;
                 justify-content: space-between;
                 border-radius: 1.5vw;
-                border: solid 1px $borderColor_2;
+                border: solid 1px $borderColor_1;
                 background: $linear_1;
 
                 p {
                     font-size: 12px;
-                    color: $font-color_3;
+                    color: $font-color_1;
                 }
 
                 i {
@@ -277,7 +277,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: solid 1px $borderColor_2;
+            border: solid 1px $borderColor_1;
             border-radius: 1.5vw;
             width: 30.4vw;
             height: 23.2vw;
@@ -290,7 +290,7 @@
 
             img {
                 border-radius: 1.5vw;
-                border: solid 1px $borderColor_2;
+                border: solid 1px $borderColor_1;
             }
 
             p {

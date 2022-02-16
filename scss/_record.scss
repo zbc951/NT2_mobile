@@ -2,7 +2,7 @@
 .bettingWrap {
     width: 100%;
     height: calc(100vh - 95px);
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
     overflow-y: auto;
     padding-top: 10px;
     box-sizing: border-box;
@@ -53,7 +53,7 @@
                 .inputBox {
                     width: 100%;
                     height: 42px;
-                    border: solid 1px $borderColor_18;
+                    border: solid 1px $borderColor_1;
                     border-radius: 3px;
                     display: flex;
                     align-items: center;
@@ -126,7 +126,7 @@
             height: auto;
             box-sizing: border-box;
             padding: 80px;
-            color: $font-color_26;
+            color: $font-color_1;
             font-weight: bold;
             text-align: center;
             font-size: 14px;
@@ -141,7 +141,7 @@
             width: 100%;
             height: auto;
             border-radius: 5px;
-            border: solid 1px $borderColor_18;
+            border: solid 1px $borderColor_1;
             background: $backgroundColor_2;
             margin-bottom: 10px;
 
@@ -152,7 +152,7 @@
             .title {
                 width: 100%;
                 height: 38px;
-                border-bottom: solid 1px $borderColor_11;
+                border-bottom: solid 1px $borderColor_3;
                 color: $font-color_12;
                 font-size: 14px;
                 font-weight: bold;
@@ -191,11 +191,11 @@
                             color: $font-color_6;
     
                             &.win {
-                                color: $font-color_28;
+                                color: $font-color_3;
                             }
     
                             &.lose {
-                                color: $font-color_21;
+                                color: $font-color_10;
                             }
                         }
                     }

@@ -835,7 +835,7 @@ html body .marqueeBox .marquee {
 html body .marqueeBox .marquee pre {
   display: inline-block;
   font-size: 13px;
-  color: #9a9b9b;
+  color: #999999;
   animation: marquee 30s linear 0s infinite;
   padding-left: 100%;
 }
@@ -873,7 +873,7 @@ html body .memberArea .loginBtn .login_ic {
 html body .memberArea .loginBtn span {
   font-size: 14px;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .memberArea .alLogin {
   justify-content: center;
@@ -950,7 +950,7 @@ html body .memberArea .operate {
 html body .memberArea .operate .btnBox {
   width: 100%;
   height: 60px;
-  border-left: solid 1px #d7d8d8;
+  border-left: solid 1px #e6e6e6;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -991,7 +991,7 @@ html body .homeCenter .gameList li {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
   box-sizing: border-box;
 }
@@ -1013,12 +1013,12 @@ html body .homeCenter .gameList li div {
   align-items: center;
   justify-content: space-between;
   border-radius: 1.5vw;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #e6e6e6;
   background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
 }
 html body .homeCenter .gameList li div p {
   font-size: 12px;
-  color: #b3b3b3;
+  color: #999999;
 }
 html body .homeCenter .gameList li div i {
   display: block;
@@ -1046,7 +1046,7 @@ html body .homeCenter .gameBox li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
   width: 30.4vw;
   height: 23.2vw;
@@ -1058,11 +1058,11 @@ html body .homeCenter .gameBox li:nth-of-type(2n) {
 }
 html body .homeCenter .gameBox li img {
   border-radius: 1.5vw;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #e6e6e6;
 }
 html body .homeCenter .gameBox li p {
   font-size: 12px;
-  color: #848484;
+  color: #808080;
   padding-top: 0.9vw;
 }
 html body footer {
@@ -1088,7 +1088,7 @@ html body footer ul li {
   justify-content: center;
   width: 20%;
   height: 38px;
-  border-right: solid 1px #dcdddd;
+  border-right: solid 1px #cccccc;
 }
 html body footer ul li.active p {
   color: #ad8047;
@@ -1100,7 +1100,7 @@ html body footer ul li i {
 }
 html body footer ul li p {
   font-size: 12px;
-  color: #b3b3b3;
+  color: #999999;
   padding-top: 2px;
 }
 html body .filter {
@@ -1293,7 +1293,7 @@ html body .filter .forgetWindow .title {
   background: none;
 }
 html body .filter .forgetWindow .title p {
-  color: #b0b0b1;
+  color: #999999;
   font-size: 14px;
 }
 html body .filter .forgetWindow .title .close_2 {
@@ -1346,7 +1346,7 @@ html body .filter .forgetWindow form .remind {
   margin: 15px 0;
   font-size: 14px;
   font-weight: bold;
-  color: #b0b0b1;
+  color: #999999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1415,7 +1415,7 @@ html body .filter .registerWindow form label.isCheck input[type=checkbox] {
   margin-right: 10px;
 }
 html body .filter .registerWindow form label.isCheck p {
-  color: #d9b48a;
+  color: #cfa678;
 }
 html body .filter .registerWindow form label .eye {
   position: absolute;
@@ -1448,7 +1448,7 @@ html body .filter .registerWindow form .remind {
   width: 77.33vw;
   margin: 5px 0;
   font-size: 12px;
-  color: #3d4cce;
+  color: #999999;
 }
 html body .filter .registerWindow form .choose {
   position: absolute;
@@ -1484,7 +1484,7 @@ html body .filter .registerWindow form .choose li {
   height: 100%;
   position: relative;
   box-sizing: border-box;
-  border: solid 1px #adadad;
+  border: solid 1px #9a9b9b;
   background: linear-gradient(to top, #d9d9d9 0%, #ededed 50%, #ffffff 100%);
   border-radius: 1vw;
   display: none;
@@ -1601,7 +1601,7 @@ html body .filter .news .typeList {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #ebebeb;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .filter .news .typeList li {
   border-bottom: solid 2px transparent;
@@ -1611,7 +1611,7 @@ html body .filter .news .typeList li {
   align-items: center;
 }
 html body .filter .news .typeList li:active, html body .filter .news .typeList li.active {
-  border-color: #d21414;
+  border-color: #e11515;
 }
 html body .filter .news .typeList li p {
   width: 22.67vw;
@@ -1621,7 +1621,7 @@ html body .filter .news .typeList li p {
   font-weight: bold;
   letter-spacing: 1px;
   color: #333333;
-  border-right: solid 1px #ebebeb;
+  border-right: solid 1px #e6e6e6;
 }
 html body .filter .news .content {
   width: 100%;
@@ -1635,7 +1635,7 @@ html body .filter .news .content.display {
 }
 html body .filter .news .content li {
   padding: 5px 0 18px 24px;
-  border-bottom: solid 1px #ebebeb;
+  border-bottom: solid 1px #e6e6e6;
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -1649,7 +1649,7 @@ html body .filter .news .content li .date {
   font-size: 12px;
   letter-spacing: 1px;
   margin-bottom: 9px;
-  color: #b0b0b1;
+  color: #999999;
   font-weight: bold;
 }
 html body .filter .news .content li .text {
@@ -1658,7 +1658,7 @@ html body .filter .news .content li .text {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1746,7 +1746,7 @@ html body .filter .gameWindow form .row input {
   box-sizing: border-box;
 }
 html body .filter .gameWindow hr {
-  border: solid 1px #d7d8d8;
+  border: solid 1px #e6e6e6;
 }
 html body .filter .gameWindow .enterBtn {
   display: block;
@@ -1789,23 +1789,20 @@ html body .filter .langWindow ul li {
   width: 100%;
   height: 9.87vw;
   margin-bottom: 2.4vw;
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #e8e8e8;
+  background: linear-gradient(#ffffff 40%, #f4f4f4 100%);
+  font-size: 4vw;
+  font-weight: bold;
+  color: #808080;
+  border: solid 1px #e6e6e6;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 1.5vw;
-  color: #000000;
-  font-weight: bold;
-  font-size: 14px;
   color: #808080;
-}
-html body .filter .langWindow ul li:active, html body .filter .langWindow ul li.active {
-  background: linear-gradient(to top, #ffffff 40%, #f4f4f4 100%);
 }
 html body .filter .langWindow ul li:active, html body .filter .langWindow ul li.active {
   background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
   color: #ffffff;
+  border-color: #cca172;
 }
 html body .filter .langWindow ul li:last-child {
   margin: 0;
@@ -1973,7 +1970,7 @@ html body .filter .checkPoint ul li .point .info {
   border-radius: 3px;
   align-items: center;
   justify-content: center;
-  background: #cfb53d;
+  background: #cfa678;
   font-size: 12px;
   letter-spacing: 1px;
   color: #ffffff;
@@ -1990,7 +1987,7 @@ html body .filter .checkPoint ul li .point .info::before {
   height: 0;
   border-style: solid;
   border-width: 0 4px 6px 4px;
-  border-color: #cfb53d transparent;
+  border-color: #cfa678 transparent;
 }
 html body .filter .checkPoint ul li button {
   width: 17.87vw;
@@ -2036,6 +2033,9 @@ html body .filter .accWindow .content .bigBox button, html body .filter .platWin
   font-weight: bold;
   color: #808080;
   border: solid 1px #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 3px;
 }
 html body .filter .accWindow .content .bigBox button:active, html body .filter .accWindow .content .bigBox button.active, html body .filter .platWindow .content .bigBox button:active, html body .filter .platWindow .content .bigBox button.active {
@@ -2058,6 +2058,9 @@ html body .filter .accWindow .content .smallBox button, html body .filter .platW
   font-weight: bold;
   color: #808080;
   border: solid 1px #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 3px;
 }
 html body .filter .accWindow .content .smallBox button:active, html body .filter .accWindow .content .smallBox button.active, html body .filter .platWindow .content .smallBox button:active, html body .filter .platWindow .content .smallBox button.active {
@@ -2113,14 +2116,14 @@ html body .slotWrap .slotHeader .listBox ul li {
   font-size: 13px;
   font-weight: bold;
   padding: 5px 1.33vw;
-  color: #9a9b9b;
+  color: #808080;
   display: flex;
   align-items: center;
   border-bottom: solid 2px transparent;
 }
 html body .slotWrap .slotHeader .listBox ul li.active {
-  color: #e10012;
-  border-color: #e10012;
+  color: #e11515;
+  border-color: #e11515;
 }
 html body .slotWrap .slotHeader .listBox ul li i {
   display: block;
@@ -2173,7 +2176,7 @@ html body .slotWrap .gameList {
 html body .slotWrap .gameList .gameBox {
   width: calc((96vw - 30px)/2);
   height: 175px;
-  border: solid 1px #b3b3b3;
+  border: solid 1px #9a9b9b;
   border-radius: 1.5vw;
   overflow: hidden;
   margin: 0 1vw 8px;
@@ -2188,7 +2191,7 @@ html body .slotWrap .gameList .gameBox p {
   padding: 0 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #3e3a39;
+  color: #333333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2255,7 +2258,7 @@ html body .eventType ul li:active, html body .eventType ul li.active {
   border-color: #e11515;
 }
 html body .eventType ul li:active span, html body .eventType ul li.active span {
-  color: #231815;
+  color: #000000;
 }
 html body .eventType ul li .all_ic {
   width: 25px;
@@ -2265,7 +2268,7 @@ html body .eventType ul li .all_ic {
 html body .eventType ul li span {
   font-size: 12px;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .eventList {
   width: 100%;
@@ -2294,7 +2297,7 @@ html body .eventList ul li .eventBox {
   box-shadow: 0 0 13px 5px #dedede;
 }
 html body .eventList ul li .eventBox .eventImg {
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .eventList ul li .eventBox p {
   width: 100%;
@@ -2345,13 +2348,13 @@ html body .eventDetail .detailHeader ul .title, html body .eventDetail .detailCo
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #0484d6;
+  color: #e11515;
 }
 html body .eventDetail .detailHeader ul .content, html body .eventDetail .detailContent ul .content {
   display: flex;
 }
 html body .eventDetail .detailHeader ul .content div, html body .eventDetail .detailContent ul .content div {
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
   font-size: 14px;
 }
@@ -2384,7 +2387,7 @@ html body .walletWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
   padding-bottom: 10px;
 }
 html body .walletWrap .walletBox {
@@ -2411,7 +2414,7 @@ html body .walletWrap .walletBox .gradient .content .amount {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #efefef;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .amount .half {
   width: 50%;
@@ -2423,7 +2426,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: #4d4d4d;
+  color: #595757;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -2437,7 +2440,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title .icon {
   margin-left: 6px;
 }
 html body .walletWrap .walletBox .gradient .content .amount .half .money {
-  color: #272727;
+  color: #000000;
   font-size: 25px;
   font-weight: bold;
   display: flex;
@@ -2449,7 +2452,7 @@ html body .walletWrap .walletBox .gradient .content .details {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #efefef;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .details .items {
   display: flex;
@@ -2458,7 +2461,7 @@ html body .walletWrap .walletBox .gradient .content .details .items {
   box-sizing: border-box;
   padding: 0 6px;
   height: 10.67vw;
-  border-right: solid 1px #efefef;
+  border-right: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .details .items:nth-of-type(2) {
   border: none;
@@ -2481,10 +2484,10 @@ html body .walletWrap .walletBox .gradient .content .details .items p:nth-of-typ
   padding: 0 5px;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.mainWallet {
-  color: #ed1c24;
+  color: #e11515;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.limit {
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.activeWallet {
   color: #ff8600;
@@ -2510,7 +2513,7 @@ html body .walletWrap .walletBox ul li i {
 html body .walletWrap .walletBox ul li p {
   font-size: 13px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   padding-top: 6px;
 }
 html body .walletWrap .btnBox {
@@ -2572,7 +2575,7 @@ html body .walletWrap .walletList .forPlatform .title {
   margin-bottom: 11px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #a67c52;
+  color: #ad8047;
   font-weight: bold;
 }
 html body .walletWrap .walletList .forActive .title button,
@@ -2620,7 +2623,7 @@ html body .walletWrap .walletList .forPlatform ul li {
   box-sizing: border-box;
   padding: 12px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #e8e7e6;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
 html body .walletWrap .walletList .forActive ul li:nth-of-type(3n),
@@ -2633,7 +2636,7 @@ html body .walletWrap .walletList .forHistory ul li div,
 html body .walletWrap .walletList .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .walletWrap .walletList .forActive ul li p,
@@ -2681,7 +2684,7 @@ html body .memberWrap {
   width: 100%;
   height: auto;
   min-height: calc(100% - 92px);
-  background: #f8f8f8;
+  background: #f2f3f3;
   padding-bottom: 10px;
 }
 html body .memberWrap .user {
@@ -2717,7 +2720,7 @@ html body .memberWrap .user .info div .account .lv {
   padding: 0 5px;
   margin-right: 9px;
   border-radius: 1vw;
-  background: #cfb53d;
+  background: #cfa678;
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -2749,14 +2752,14 @@ html body .memberWrap .user .wallet p {
   height: 8.27vw;
   box-sizing: border-box;
   padding-left: 16px;
-  background: #faf8f6;
+  background: #f2f3f3;
   border-style: solid;
   border-width: 1px 0 1px 1px;
-  border-color: #a67c52;
+  border-color: #cca172;
   border-radius: 5vw 0 0 5vw;
   font-size: 15px;
   letter-spacing: 1px;
-  color: #a67c52;
+  color: #ad8047;
   font-weight: bold;
 }
 html body .memberWrap .user .wallet button {
@@ -2812,12 +2815,12 @@ html body .memberWrap .user .btnBox button .text {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #b3b3b3;
+  color: #999999;
   text-align: left;
 }
 html body .memberWrap .user ul {
@@ -2851,8 +2854,8 @@ html body .memberWrap .user ul li .bubble {
   position: absolute;
   width: auto;
   height: auto;
-  min-width: 22px;
-  min-height: 22px;
+  min-width: 20px;
+  min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2862,9 +2865,8 @@ html body .memberWrap .user ul li .bubble {
   right: 10px;
   border-radius: 50%;
   color: #ffffff;
-  background: #ed1c24;
+  background: #e11515;
   box-sizing: border-box;
-  border: solid 1px #ffffff;
 }
 html body .memberWrap .options {
   width: 100%;
@@ -2897,7 +2899,7 @@ html body .memberWrap .options div p {
   font-size: 15px;
   letter-spacing: 2px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .memberWrap .options .arrow_ic {
   display: block;
@@ -2925,10 +2927,10 @@ html body .memberList ul li {
   border-bottom: solid 2px transparent;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .memberList ul li:active, html body .memberList ul li.active {
-  color: #231815;
+  color: #000000;
   border-color: #e11515;
 }
 html body .memberInfo {
@@ -2937,7 +2939,7 @@ html body .memberInfo {
   height: calc(100vh - 136px);
   padding: 10px 0;
   box-sizing: border-box;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .memberInfo form {
   width: 100%;
@@ -2958,7 +2960,7 @@ html body .memberInfo form ul li {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 17px;
-  border-bottom: solid 1px #f5f5f5;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .memberInfo form ul li.active {
   height: 103px;
@@ -2979,7 +2981,7 @@ html body .memberInfo form ul li span {
   width: 20vw;
   font-weight: bold;
   font-size: 14px;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .memberInfo form ul li input {
   width: 64vw;
@@ -3052,7 +3054,7 @@ html body .memberInfo .info_1 ul li, html body .memberInfo .info_2 ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 1px #f5f5f5;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .memberInfo .info_1 ul li span, html body .memberInfo .info_2 ul li span {
   font-size: 14px;
@@ -3108,8 +3110,8 @@ html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul 
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
+  background: #fcf9f3;
+  border: solid 1px #cca172;
   box-sizing: border-box;
   padding: 0 20px;
   border-radius: 5px;
@@ -3134,7 +3136,7 @@ html body .memberPlatform {
   height: calc(100vh - 136px);
   padding: 10px 4vw;
   box-sizing: border-box;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .memberPlatform .platformBox {
   width: 100%;
@@ -3198,7 +3200,7 @@ html body .appWrap {
   height: calc(100vh - 92px);
   box-sizing: border-box;
   padding: 10px 15px;
-  background: #f8f8f8;
+  background: #f2f3f3;
   overflow-y: auto;
 }
 html body .appWrap ul {
@@ -3214,13 +3216,13 @@ html body .appWrap ul li {
   box-sizing: border-box;
   border-radius: 1.5vw;
   padding: 2px;
-  border: solid 1px #dbdbdb;
+  border: solid 1px #cccccc;
   background: #ffffff;
   margin-bottom: 5px;
 }
 html body .appWrap ul li img {
   border-radius: 1.5vw 1.5vw 0 0;
-  border: solid 1px #dbdbdb;
+  border: solid 1px #cccccc;
   box-sizing: border-box;
 }
 html body .appWrap ul li p {
@@ -3241,7 +3243,7 @@ html body .appWrap ul li p span {
   text-overflow: ellipsis;
   font-size: 4vw;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .appWrap ul li p .download_ic {
   display: block;
@@ -3330,7 +3332,7 @@ html body .joinUsWrap .content .contentUl .items:nth-of-type(3) ul li .box .bott
   color: #ffffff;
   font-size: 13px;
   font-weight: bold;
-  background: #0000004d;
+  background: #00000066;
 }
 html body .joinUsWrap .content .contentUl .items:nth-of-type(3) ul li .box .bottom p {
   margin: 0;
@@ -3375,7 +3377,7 @@ html body .joinUsWrap .content .contentUl .items ul li i {
 html body .joinUsWrap .content .contentUl .items ul li p {
   font-size: 13px;
   letter-spacing: 1px;
-  color: #cc8b43;
+  color: #ad8047;
   font-weight: bold;
   margin: 12px auto;
   text-align: center;
@@ -3391,7 +3393,7 @@ html body .joinUsWrap .content .contentUl .items ul li button {
   border-radius: 1.5vw;
   color: #000000;
   font-weight: bold;
-  border: solid 1px #cc8b43;
+  border: solid 1px #cca172;
   flex-direction: column;
   font-size: 12px;
 }
@@ -3465,7 +3467,7 @@ html body .joinUsWrap .content .contentUl .items .remindBox {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .helpWrap {
@@ -3552,7 +3554,7 @@ html body .helpInner {
   display: none;
   width: 100%;
   height: calc(100vh - 94px);
-  background: #fffefd;
+  background: #f2f3f3;
   overflow-y: auto;
 }
 html body .helpInner.display {
@@ -3672,20 +3674,17 @@ html body .eventApplyType ul li {
   border-bottom: solid 2px transparent;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
   border-color: #e11515;
-  color: #231815;
-}
-html body .eventApplyType ul li:active span, html body .eventApplyType ul li.active span {
-  color: #231815;
+  color: #000000;
 }
 html body .applyList {
   display: none;
   width: 100%;
   height: calc(100vh - 132px);
-  background: #f8f8f8;
+  background: #f2f3f3;
   overflow-y: scroll;
   margin-top: 40px;
 }
@@ -3761,11 +3760,11 @@ html body .applyList .listBox .list ul li {
   justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #595757;
   align-items: center;
 }
 html body .applyList .listBox .list ul li.cur {
-  background: #fffcf5;
+  background: #fcf9f3;
 }
 html body .applyList .listBox .list ul li p {
   font-size: 13px;
@@ -3775,7 +3774,7 @@ html body .applyList .listBox .list ul li p em {
   color: #e11515;
 }
 html body .applyList .listBox .list ul li p em.sp {
-  color: #39b54a;
+  color: #009245;
 }
 html body .applyList .listBox .list .btnBox {
   width: 100%;
@@ -3813,7 +3812,7 @@ html body .applyList .listBox .list .btnBox button.checkBtn {
 html body .applyRecord {
   width: 100%;
   height: calc(100vh - 132px);
-  background: #f8f8f8;
+  background: #f2f3f3;
   overflow-y: auto;
   margin-top: 40px;
   box-sizing: border-box;
@@ -3899,6 +3898,9 @@ html body .applyRecord .searchContain form ul li .btnBox button {
   font-weight: bold;
   color: #808080;
   border: solid 1px #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html body .applyRecord .searchContain form ul li .btnBox button:active, html body .applyRecord .searchContain form ul li .btnBox button.active {
   background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
@@ -3972,7 +3974,7 @@ html body .applyRecord .reviewBody .recordBox ul .title {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: solid 2px #f08a8a;
+  border-bottom: solid 2px #e11515;
 }
 html body .applyRecord .reviewBody .recordBox ul .title p {
   color: #000000;
@@ -3997,13 +3999,13 @@ html body .applyRecord .reviewBody .recordBox ul ul li:last-child {
 html body .applyRecord .reviewBody .recordBox ul ul li p {
   font-size: 14px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .vipWrap {
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .vipWrap .topBox {
   width: 100%;
@@ -4044,7 +4046,7 @@ html body .vipWrap .topBox .board .content .textBox {
 }
 html body .vipWrap .topBox .board .content .textBox span {
   font-size: 14px;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .vipWrap .topBox .board .content .medal {
   width: 20.93vw;
@@ -4061,7 +4063,7 @@ html body .vipWrap .topBox .board .content .medal {
 html body .vipWrap .topBox .board .content .medal p {
   font-size: 18px;
   font-weight: bold;
-  color: #603813;
+  color: #000000;
   text-align: center;
   line-height: 22px;
 }
@@ -4080,7 +4082,7 @@ html body .vipWrap .topBox .board .exBar .level p {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 14px;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .vipWrap .topBox .board .exBar .level p.cur {
   color: #e11515;
@@ -4261,7 +4263,7 @@ html body .vipWrap .topBox .cardBox .card ul li .medal {
 html body .vipWrap .topBox .cardBox .card ul li .medal p {
   font-weight: bold;
   font-size: 18px;
-  color: #603813;
+  color: #000000;
 }
 html body .vipWrap .topBox .cardBox .card ul li .textBox {
   display: flex;
@@ -4275,7 +4277,7 @@ html body .vipWrap .topBox .cardBox .card ul li .textBox {
 html body .vipWrap .topBox .cardBox .card ul li .textBox p {
   margin-top: 2.4vw;
   font-size: 18px;
-  color: #343433;
+  color: #595757;
 }
 html body .vipWrap .enjoyBox {
   width: 100%;
@@ -4290,7 +4292,7 @@ html body .vipWrap .enjoyBox .title {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #272727;
+  color: #000000;
   box-sizing: border-box;
   padding-left: 1vw;
 }
@@ -4311,7 +4313,7 @@ html body .vipWrap .enjoyBox ul li {
   border-radius: 3px;
   font-size: 13px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #595757;
   box-sizing: border-box;
 }
 html body .vipWrap .enjoyBox ul li:nth-of-type(2n) {
@@ -4339,7 +4341,7 @@ html body .vipWrap .checkBtn {
 html body .vipWrap .checkBtn p {
   font-size: 15px;
   letter-spacing: 2px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .vipWrap .checkBtn .arrow {
@@ -4352,7 +4354,7 @@ html body .vipDetail {
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
   padding: 5px 0;
 }
 html body .vipDetail .lvWrap {
@@ -4366,7 +4368,7 @@ html body .vipDetail .lvWrap {
 html body .vipDetail .lvWrap .title {
   font-size: 17px;
   font-weight: bold;
-  color: #272727;
+  color: #000000;
   margin: 7px 0 12px;
 }
 html body .vipDetail .lvWrap .list {
@@ -4421,7 +4423,7 @@ html body .vipDetail .lvWrap .list .left li {
   align-items: center;
 }
 html body .vipDetail .lvWrap .list .left li:nth-of-type(2n) {
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .vipDetail .lvWrap .list .left li.smallTitle {
   border-bottom: solid 1px #e11515;
@@ -4436,7 +4438,7 @@ html body .vipDetail .lvWrap .list .left li p {
   font-weight: bold;
   text-align: center;
   font-size: 14px;
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .vipDetail .lvWrap .list .right {
   width: 80%;
@@ -4460,7 +4462,7 @@ html body .vipDetail .lvWrap .list .right ul li {
   align-items: center;
 }
 html body .vipDetail .lvWrap .list .right ul li:nth-of-type(2n) {
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .vipDetail .lvWrap .list .right ul li.smallTitle {
   border-bottom: solid 1px #e11515;
@@ -4475,7 +4477,7 @@ html body .vipDetail .lvWrap .list .right ul li p {
   font-weight: bold;
   text-align: center;
   font-size: 14px;
-  color: #4d4d4d;
+  color: #595757;
   box-sizing: border-box;
   padding: 0 15px;
 }
@@ -4499,10 +4501,10 @@ html body .topList ul li {
   justify-content: center;
   font-size: 14px;
   font-weight: bold;
-  color: #848484;
+  color: #808080;
 }
 html body .topList ul li.active {
-  color: #231815;
+  color: #000000;
   border-color: #e11515;
 }
 html body .mailBody.normal {
@@ -4516,7 +4518,7 @@ html body .mailBody.normal .subClass {
   height: auto;
   box-sizing: border-box;
   padding: 10px 15px;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .mailBody.normal .subClass ul {
   width: 100%;
@@ -4683,7 +4685,7 @@ html body .mailBody.normal .mailBox ul li .textBox p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #343433;
+  color: #595757;
   font-size: 14px;
 }
 html body .mailBody.normal .mailBox ul li .textBox .date {
@@ -4692,7 +4694,7 @@ html body .mailBody.normal .mailBox ul li .textBox .date {
   right: 30px;
   font-size: 13px;
   font-weight: bold;
-  color: #343433;
+  color: #595757;
 }
 html body .mailBody.normal .mailBox ul li .inputBox {
   display: none;
@@ -4712,7 +4714,7 @@ html body .mailBody.normal .mailBox ul li .inputBox input::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #e6e6e6;
   background: #ffffff;
   border-radius: 50%;
   top: 50%;
@@ -4725,7 +4727,7 @@ html body .mailBody.normal .mailBox ul li .inputBox input:checked::after {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #f8f8f8;
+  background: #f2f3f3;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -4742,7 +4744,7 @@ html body .mailBody.post .subClass {
   height: auto;
   box-sizing: border-box;
   padding: 10px 15px;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .mailBody.post .subClass ul {
   width: 100%;
@@ -4816,14 +4818,14 @@ html body .mailContent .msg {
   line-height: 20px;
   font-size: 14px;
   font-weight: bold;
-  color: #343433;
+  color: #595757;
 }
 html body .cardList {
   width: 100%;
   height: 220px;
   box-sizing: border-box;
   padding: 10px 0;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .cardList .cardBox {
   width: 100%;
@@ -4906,7 +4908,7 @@ html body .cardList .cardBox ul li .ing {
   text-align: center;
   background: #ffffff;
   border-radius: 0 0 5px 5px;
-  color: #a67c52;
+  color: #ad8047;
   margin: 10px auto 5px;
   font-size: 12px;
 }
@@ -4968,7 +4970,7 @@ html body .cardContent ul button:active, html body .cardContent ul button.active
 html body .bettingWrap {
   width: 100%;
   height: calc(100vh - 95px);
-  background: #f8f8f8;
+  background: #f2f3f3;
   overflow-y: auto;
   padding-top: 10px;
   box-sizing: border-box;
@@ -5087,6 +5089,9 @@ html body .bettingWrap .searchContent .date button {
   font-weight: bold;
   color: #808080;
   border: solid 1px #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html body .bettingWrap .searchContent .date button:active, html body .bettingWrap .searchContent .date button.active {
   background: linear-gradient(to bottom, #cda273 10%, #eec696 100%);
@@ -5194,7 +5199,7 @@ html body .walletWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
   padding-bottom: 10px;
 }
 html body .walletWrap .walletBox {
@@ -5221,7 +5226,7 @@ html body .walletWrap .walletBox .gradient .content .amount {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #efefef;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .amount .half {
   width: 50%;
@@ -5233,7 +5238,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  color: #4d4d4d;
+  color: #595757;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -5247,7 +5252,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title .icon {
   margin-left: 6px;
 }
 html body .walletWrap .walletBox .gradient .content .amount .half .money {
-  color: #272727;
+  color: #000000;
   font-size: 25px;
   font-weight: bold;
   display: flex;
@@ -5259,7 +5264,7 @@ html body .walletWrap .walletBox .gradient .content .details {
   width: 100%;
   height: auto;
   display: flex;
-  border-bottom: solid 1px #efefef;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .details .items {
   display: flex;
@@ -5268,7 +5273,7 @@ html body .walletWrap .walletBox .gradient .content .details .items {
   box-sizing: border-box;
   padding: 0 6px;
   height: 10.67vw;
-  border-right: solid 1px #efefef;
+  border-right: solid 1px #e6e6e6;
 }
 html body .walletWrap .walletBox .gradient .content .details .items:nth-of-type(2) {
   border: none;
@@ -5291,10 +5296,10 @@ html body .walletWrap .walletBox .gradient .content .details .items p:nth-of-typ
   padding: 0 5px;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.mainWallet {
-  color: #ed1c24;
+  color: #e11515;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.limit {
-  color: #4d4d4d;
+  color: #595757;
 }
 html body .walletWrap .walletBox .gradient .content .details .items p.activeWallet {
   color: #ff8600;
@@ -5320,7 +5325,7 @@ html body .walletWrap .walletBox ul li i {
 html body .walletWrap .walletBox ul li p {
   font-size: 13px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   padding-top: 6px;
 }
 html body .walletWrap .btnBox {
@@ -5382,7 +5387,7 @@ html body .walletWrap .walletList .forPlatform .title {
   margin-bottom: 11px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #a67c52;
+  color: #ad8047;
   font-weight: bold;
 }
 html body .walletWrap .walletList .forActive .title button,
@@ -5430,7 +5435,7 @@ html body .walletWrap .walletList .forPlatform ul li {
   box-sizing: border-box;
   padding: 12px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #e8e7e6;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
 html body .walletWrap .walletList .forActive ul li:nth-of-type(3n),
@@ -5443,7 +5448,7 @@ html body .walletWrap .walletList .forHistory ul li div,
 html body .walletWrap .walletList .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .walletWrap .walletList .forActive ul li p,
@@ -5490,7 +5495,7 @@ html body .walletWrap .walletList .forPlatform .openBtn div .db_arrow {
 html body .depositWrap {
   width: 100%;
   height: calc(100vh - 95px);
-  background: #f8f8f8;
+  background: #f2f3f3;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 10px 0;
@@ -5658,7 +5663,7 @@ html body .depositWrap .remindBox {
   padding: 14px 15px;
   margin: 0 auto;
   background: #fcf9f3;
-  border: solid 1px #ece0d2;
+  border: solid 1px #cca172;
   border-radius: 5px;
 }
 html body .depositWrap .remindBox p {
@@ -5681,7 +5686,7 @@ html body .transWrap {
   width: 100%;
   height: calc(100vh - 95px);
   overflow-y: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
   box-sizing: border-box;
   padding: 10px 0;
 }
@@ -5718,7 +5723,7 @@ html body .transWrap .wallet .helf .title i {
 }
 html body .transWrap .wallet .helf .amount {
   font-size: 29px;
-  color: #272727;
+  color: #000000;
   font-weight: bold;
 }
 html body .transWrap .transBox {
@@ -5802,7 +5807,7 @@ html body .transWrap .subClass {
   height: auto;
   box-sizing: border-box;
   padding: 10px 15px;
-  background: #f8f8f8;
+  background: #f2f3f3;
 }
 html body .transWrap .subClass ul {
   width: 100%;
@@ -5849,7 +5854,7 @@ html body .transWrap .forPlatform .title {
   margin-bottom: 11px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #a67c52;
+  color: #ad8047;
   font-weight: bold;
 }
 html body .transWrap .forActive .title button,
@@ -5891,7 +5896,7 @@ html body .transWrap .forPlatform ul li {
   box-sizing: border-box;
   padding: 12px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #e8e7e6;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
 html body .transWrap .forActive ul li:nth-of-type(3n),
@@ -5902,7 +5907,7 @@ html body .transWrap .forActive ul li div,
 html body .transWrap .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .transWrap .forActive ul li p,
@@ -5945,7 +5950,7 @@ html body .withWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f8f8f8;
+  background: #f2f3f3;
   padding-bottom: 10px;
 }
 html body .withWrap .walletBox {
@@ -5988,7 +5993,7 @@ html body .withWrap .walletBox .gradient .content .title i {
 }
 html body .withWrap .walletBox .gradient .content .amount {
   font-size: 29px;
-  color: #272727;
+  color: #000000;
   font-weight: bold;
 }
 html body .withWrap .walletBox .gradient .detail {
@@ -6007,7 +6012,7 @@ html body .withWrap .walletBox .gradient .detail p {
   font-weight: bold;
 }
 html body .withWrap .walletBox .gradient .detail p.num {
-  color: #272727;
+  color: #000000;
   font-size: 17px;
 }
 html body .withWrap .walletBox .walletDetail {
@@ -6057,7 +6062,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li {
   box-sizing: border-box;
   padding: 12px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #e8e7e6;
+  border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li:nth-of-type(3n) {
@@ -6066,7 +6071,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li:nth-of-type(3n) {
 html body .withWrap .walletBox .walletDetail .detailBox ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #4d4d4d;
+  color: #595757;
   font-weight: bold;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
@@ -6112,8 +6117,8 @@ html body .withWrap .withContent .remind {
   height: auto;
   box-sizing: border-box;
   padding: 10px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
+  background: #fcf9f3;
+  border: solid 1px #cca172;
   border-radius: 5px;
   color: #595757;
   font-size: 13px;
@@ -6179,8 +6184,8 @@ html body .withWrap .remindBox {
   box-sizing: border-box;
   padding: 14px 15px;
   border-radius: 3px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
+  background: #fcf9f3;
+  border: solid 1px #cca172;
   margin: 10px auto 0;
 }
 html body .withWrap .remindBox p {

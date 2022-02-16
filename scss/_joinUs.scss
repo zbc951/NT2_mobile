@@ -103,7 +103,7 @@
                                     color: $font-color_5;
                                     font-size: 13px;
                                     font-weight: bold;
-                                    background: $backgroundColor_9;
+                                    background: $backgroundColor_3;
 
                                     p {
                                         margin: 0;
@@ -124,7 +124,7 @@
                     height: auto;
                     margin-bottom: 16px;
                     font-size: 40px;
-                    color: $font-color_28;
+                    color: $font-color_3;
                     font-weight: bold;
 
                     p {
@@ -160,7 +160,7 @@
                         p {
                             font-size: 13px;
                             letter-spacing: 1px;
-                            color: $font-color_29;
+                            color: $font-color_4;
                             font-weight: bold;
                             margin: 12px auto;
                             text-align: center;
@@ -170,7 +170,7 @@
                             width: 23.47vw;
                             height: 20.53vw;
                             @include buttonStyle_7;
-                            border: solid 1px $borderColor_17;
+                            border: solid 1px $borderColor_5;
                             flex-direction: column;
                             font-size: 12px;
 
@@ -245,7 +245,7 @@
                     font-size: 13px;
                     line-height: 24px;
                     letter-spacing: 1px;
-                    color: $font-color_16;
+                    color: $font-color_8;
                     font-weight: bold;
                 }
             }

@@ -2,7 +2,7 @@
 .depositWrap {
     width: 100%;
     height: calc(100vh - 95px);
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
     overflow-y: auto;
     box-sizing: border-box;
     padding: 10px 0;
@@ -43,7 +43,7 @@
                     overflow: hidden;
 
                     &.active {
-                        border-color: $borderColor_11;
+                        border-color: $borderColor_3;
 
                         &::before {
                             content: "";
@@ -121,11 +121,11 @@
         .remind {
             font-size: 12px;
             font-weight: bold;
-            color: $font-color_26;
+            color: $font-color_1;
             padding-top: 3px;
 
             .num {
-                color: $font-color_28;
+                color: $font-color_3;
                 margin-left: 10px;
             }
         }
@@ -150,8 +150,8 @@
         box-sizing: border-box;
         padding: 14px 15px;
         margin: 0 auto;
-        background: $backgroundColor_14;
-        border: solid 1px $borderColor_25;
+        background: $backgroundColor_8;
+        border: solid 1px $borderColor_5;
         border-radius: 5px;
 
         p {
@@ -165,11 +165,11 @@
                 margin-bottom: 10px;
                 font-size: 14px;
                 letter-spacing: 1px;
-                color: $font-color_34;
+                color: $font-color_13;
             }
 
             &.sp {
-                color: $font-color_28;
+                color: $font-color_3;
             }
         }
     }

@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     min-height: calc(100% - 92px);
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
     padding-bottom: 10px;
 
     //玩家資訊
@@ -56,7 +56,7 @@
                     font-size: 13px;
                     letter-spacing: 1px;
                     font-weight: bold;
-                    color: $font-color_26;
+                    color: $font-color_1;
                 }
             }
 
@@ -80,14 +80,14 @@
                 height: 8.27vw;
                 box-sizing: border-box;
                 padding-left: 16px;
-                background: $backgroundColor_7;
+                background: $backgroundColor_4;
                 border-style: solid;
                 border-width: 1px 0 1px 1px;
-                border-color: $borderColor_14;
+                border-color: $borderColor_5;
                 border-radius: 5vw 0 0 5vw;
                 font-size: 15px;
                 letter-spacing: 1px;
-                color: $font-color_25;
+                color: $font-color_4;
                 font-weight: bold;
             }
 
@@ -129,12 +129,12 @@
                     font-size: 18px;
                     font-weight: bold;
                     letter-spacing: 2px;
-                    color: $font-color_16;
+                    color: $font-color_8;
 
                     p {
                         font-size: 12px;
                         letter-spacing: 1px;
-                        color: $font-color_3;
+                        color: $font-color_1;
                         text-align: left;
                     }
                 }
@@ -174,8 +174,8 @@
                     position: absolute;
                     width: auto;
                     height: auto;
-                    min-width: 22px;
-                    min-height: 22px;
+                    min-width: 20px;
+                    min-height: 20px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -185,9 +185,8 @@
                     right: 10px;
                     border-radius: 50%;
                     color: $font-color_5;
-                    background: $backgroundColor_8;
+                    background: $backgroundColor_1;
                     box-sizing: border-box;
-                    border: solid 1px $borderColor_15;
                 }
             }
         }
@@ -231,7 +230,7 @@
                 font-size: 15px;
                 letter-spacing: 2px;
                 font-weight: bold;
-                color: $font-color_16;
+                color: $font-color_8;
             }
         }
 
@@ -268,8 +267,8 @@
             color: $font-color_2;
 
             &:active,&.active {
-                color: $font-color_19;
-                border-color: $borderColor_11;
+                color: $font-color_12;
+                border-color: $borderColor_3;
             }
         }
     }
@@ -282,7 +281,7 @@
     height: calc(100vh - 136px);
     padding: 10px 0;
     box-sizing: border-box;
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
 
     form {
         width: 100%;
@@ -303,7 +302,7 @@
                 justify-content: space-between;
                 box-sizing: border-box;
                 padding: 0 17px;
-                border-bottom: solid 1px $borderColor_21;
+                border-bottom: solid 1px $borderColor_1;
 
                 &.active {
                     height: 103px;
@@ -318,7 +317,7 @@
 
                     &::before {
                         content: "※ ";
-                        color: $font-color_28;
+                        color: $font-color_3;
                         padding: 0 5px 0 0;
                         font-size: 14px;
                     }
@@ -328,7 +327,7 @@
                     width: 20vw;
                     font-weight: bold;
                     font-size: 14px;
-                    color: $font-color_16;
+                    color: $font-color_8;
                 }
 
                 input {
@@ -386,7 +385,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-bottom: solid 1px $borderColor_21;
+                border-bottom: solid 1px $borderColor_1;
 
                 span {
                     font-size: 14px;
@@ -394,7 +393,7 @@
                     color: $font-color_14;
 
                     &.empty {
-                        color: $font-color_28;
+                        color: $font-color_3;
                     }
 
                     &:nth-of-type(1) {
@@ -445,8 +444,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    background: $backgroundColor_12;
-                    border: solid 1px $borderColor_22;
+                    background: $backgroundColor_8;
+                    border: solid 1px $borderColor_5;
                     box-sizing: border-box;
                     padding: 0 20px;
                     border-radius: 5px;
@@ -457,15 +456,15 @@
                         margin-left: 5px;
 
                         &.low {
-                            color: $font-color_11;
+                            color: $font-color_9;
                         }
 
                         &.middle {
-                            color: $font-color_24;
+                            color: $font-color_11;
                         }
 
                         &.high {
-                            color: $font-color_21;
+                            color: $font-color_10;
                         }
                     }
                 }
@@ -481,13 +480,13 @@
     height: calc(100vh - 136px);
     padding: 10px 4vw;
     box-sizing: border-box;
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
 
     .platformBox {
         width: 100%;
         height: auto;
         box-sizing: border-box;
-        border: solid 1px $borderColor_18;
+        border: solid 1px $borderColor_1;
         border-radius: 5px;
         background: $backgroundColor_2;
         margin-bottom: 10px;
@@ -495,7 +494,7 @@
         .title {
             width: 100%;
             height: 38px;
-            border-bottom: solid 1px $borderColor_11;
+            border-bottom: solid 1px $borderColor_3;
             box-sizing: border-box;
             padding: 0 17px;
             color: $font-color_8;

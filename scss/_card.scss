@@ -4,7 +4,7 @@
     height: 220px;
     box-sizing: border-box;
     padding: 10px 0;
-    background: $backgroundColor_5;
+    background: $backgroundColor_4;
 
     .cardBox {
         width: 100%;
@@ -21,7 +21,7 @@
             top: 10px;
             left: 10px;
             position: absolute;
-            color: $font-color_27;
+            color: $font-color_2;
             font-weight: bold;
         }
 
@@ -43,7 +43,7 @@
                 margin-right: 15px;
 
                 &.empty {
-                    background: $linear_12;
+                    background: $linear_5;
 
                 }
 
@@ -99,7 +99,7 @@
                     text-align: center;
                     background: $backgroundColor_2;
                     border-radius: 0 0 5px 5px;
-                    color: $font-color_25;
+                    color: $font-color_4;
                     margin: 10px auto 5px;
                     font-size: 12px;
                 }
@@ -142,7 +142,7 @@
                 box-sizing: border-box;
                 font-size: 12px;
                 font-weight: bold;
-                color: $font-color_26;
+                color: $font-color_1;
             }
         }
 
