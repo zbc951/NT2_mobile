@@ -247,6 +247,12 @@
                         letter-spacing: 1px;
                         color: $font-color_8;
                         font-weight: bold;
+
+                        i {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                        }
                     }
 
                     p {

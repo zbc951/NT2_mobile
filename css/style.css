@@ -2683,6 +2683,13 @@ html body .walletWrap .walletList .forPlatform ul li div {
   color: #595757;
   font-weight: bold;
 }
+html body .walletWrap .walletList .forActive ul li div i,
+html body .walletWrap .walletList .forHistory ul li div i,
+html body .walletWrap .walletList .forPlatform ul li div i {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
 html body .walletWrap .walletList .forActive ul li p,
 html body .walletWrap .walletList .forHistory ul li p,
 html body .walletWrap .walletList .forPlatform ul li p {
@@ -5496,6 +5503,13 @@ html body .walletWrap .walletList .forPlatform ul li div {
   letter-spacing: 1px;
   color: #595757;
   font-weight: bold;
+}
+html body .walletWrap .walletList .forActive ul li div i,
+html body .walletWrap .walletList .forHistory ul li div i,
+html body .walletWrap .walletList .forPlatform ul li div i {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 html body .walletWrap .walletList .forActive ul li p,
 html body .walletWrap .walletList .forHistory ul li p,
