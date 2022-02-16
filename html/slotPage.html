@@ -59,7 +59,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <button class="love"></button>
                     </p>
                     <div class="btnBox">
-                        <button class="enter">進入遊戲</button>
+                        <button class="enter" onclick="callSlot()">進入遊戲</button>
                         <button class="try">試玩看看</button>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
             </li>
             <li onclick="window.location.href='./wallet.html'">
                 <i class="wallet_ic"></i>
-                <p>錢包</p>
+                <p>存轉提</p>
             </li>
             <li onclick="window.location.href='./help_often.html'">
                 <i class="service_ic"></i>
@@ -191,6 +191,41 @@
         </ul>
     </footer>
     <!--彈窗-->
-    <div class="filter"></div>
+    <div class="filter">
+        <div class="jumpWindow gameWindow slot">
+            <div class="title">
+                <p>老虎機</p>
+                <i class="close"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p class="smallTitle">中心錢包</p>
+                    <div class="moneyText">$999</div>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">轉帳金額</p>
+                    <input type="text">
+                </div>
+                <div class="row btnBox">
+                    <button type="button">$100</button>
+                    <button type="button">$500</button>
+                    <button type="button">$1000</button>
+                    <button type="button">$3000</button>
+                    <button type="button">$5000</button>
+                    <button type="button">$10000</button>
+                    <button type="button">全部</button>
+                </div>
+                <div class="row checkBtn">
+                    <button>確認</button>
+                </div>
+                <div class="row">
+                    <p class="smallTitle">鳳凰棋牌</p>
+                    <div class="moneyText">$0</div>
+                </div>
+            </form>
+            <hr>
+            <button class="enterBtn">進入遊戲</button>
+        </div>
+    </div>
 </body>
 </html>

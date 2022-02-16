@@ -96,6 +96,11 @@ $(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.platWindow').addClass('display');
     })
+
+    $(".cardContent button").click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter,.plsGo2').addClass('display');
+    })
 })
 //請先登入
 function unlogin(){
@@ -182,6 +187,10 @@ function callLottery() {
 function callBoard() {
     $('.jumpWindow').removeClass('display');
     $('.filter,.gameWindow.board').addClass('display');
+}
+function callSlot() {
+    $('.jumpWindow').removeClass('display');
+    $('.filter,.gameWindow.slot').addClass('display');
 }
 
 //slotPage .gameBox .love

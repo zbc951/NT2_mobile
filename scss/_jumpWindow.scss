@@ -39,7 +39,7 @@
     }
 
     //請先XX轉跳視窗
-    .plsGo {
+    .plsGo,.plsGo2 {
         width: 92%;
         height: auto;
         background: $backgroundColor_2;
@@ -61,6 +61,10 @@
             box-sizing: border-box;
             padding: 24px 80px 0;
             text-align: center;
+
+            p {
+                line-height: 20px;
+            }
         }
 
         .btnBox {
@@ -73,6 +77,51 @@
                 width: 92%;
                 height: 40px;
                 @include buttonStyle_2;
+            }
+        }
+    }
+
+    //loading
+    .loading {
+        width: 92.27vw;
+        height: auto;
+        background: $backgroundColor_2;
+        border-radius: 1.5vw;
+        overflow: hidden;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .content {
+            width: 100%;
+            height: 60vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            div {
+                width: 30vw;
+                height: 30vw;
+                animation: round 2s linear 0s infinite;
+            }
+
+            p {
+                margin-top: 20px;
+                color: $font-color_1;
+                font-weight: bold;
+            }
+
+            @keyframes round {
+                0% {
+                    transform: rotate(0);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
             }
         }
     }
@@ -540,28 +589,27 @@
             }
 
             li {
-                padding: 5px 0 18px 24px;
+                padding: 0px 24px;
                 border-bottom: solid 1px $borderColor_1;
                 width: 100%;
-                height: auto;
+                height: 50px;
                 box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
 
                 .date {
-                    text-align: right;
-                    width: 100%;
-                    height: auto;
-                    box-sizing: border-box;
-                    padding-right: 20px;
                     font-size: 12px;
                     letter-spacing: 1px;
-                    margin-bottom: 9px;
                     color: $font-color_1;
                     font-weight: bold;
+                    flex-shrink: 0;
                 }
 
                 .text {
-                    width: 76.53vw;
-                    height: 32px;
+                    width: 67%;
+                    height: auto;
                     font-size: 14px;
                     font-weight: bold;
                     letter-spacing: 1px;
@@ -853,7 +901,7 @@
                         border-radius: 3px;
                         align-items: center;
                         justify-content: center;
-                        background: $backgroundColor_6;
+                        background: $backgroundColor_1;
                         font-size: 12px;
                         letter-spacing: 1px;
                         color: $font-color_5;
@@ -871,7 +919,7 @@
                             height: 0;
                             border-style: solid;
                             border-width: 0 4px 6px 4px;
-                            border-color: $backgroundColor_6 transparent;
+                            border-color: $backgroundColor_1 transparent;
                         }
                     }
                 }

@@ -238,10 +238,12 @@
             .card {
                 width: 87.27vw;
                 height: 47.46vw;
-                overflow: hidden;
+                overflow-x: auto;
                 
                 ul {
                     display: flex;
+                    width: auto;
+                    height: auto;
 
                     li {
                         position: relative;

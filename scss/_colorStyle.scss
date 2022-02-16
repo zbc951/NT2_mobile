@@ -148,15 +148,15 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     }
 }
 @mixin buttonStyle_4_2 {
-    background: linear-gradient(to top, #359233 0%, #49ff42 100%);
-    border: solid 1px #08d600;
+    background: linear-gradient(to top, #384c79 0%, #2b87e6 100%);
+    border: solid 1px #0f4eb7;
     border-radius: 1vw;
     color: #ffffff;
     font-weight: bold;
     font-size: 3vw;
 
     &:active,&.active {
-        background: linear-gradient(to bottom, #359233 0%, #49ff42 100%);
+        background: linear-gradient(to bottom, #384c79 0%, #2b87e6 100%);
     }
 }
 
