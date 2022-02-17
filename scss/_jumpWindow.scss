@@ -968,4 +968,103 @@
             }
         }
     }
+
+    //注單明細
+    .bettingDetail {
+        width: 92.27vw;
+        height: calc(100vh - 60px);
+        background: $backgroundColor_2;
+        border-radius: 1.5vw;
+        overflow: hidden;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .content {
+            width: 92%;
+            height: auto;
+            margin: 0 auto;
+
+            .smallTitle {
+                width: 100%;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                border-bottom: solid 1px $borderColor_3;
+                font-size: 15px;
+                font-weight: bold;
+                color: $font-color_12;
+                margin-bottom: 10px;
+            }
+
+            .mainCnt {
+                width: 100%;
+                height: calc(100vh - 235px);
+                padding: 5px 5px 40px;
+                box-sizing: border-box;
+                background: $backgroundColor_4;
+                border-bottom: solid 1px $borderColor_2;
+                overflow-y: auto;
+
+                .noData {
+                    width: 100%;
+                    height: 80px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    color: $font-color_1;
+                    font-weight: bold;
+                    font-size: 16px;
+
+                    &.display {
+                        display: flex;
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 100%;
+                padding-top: 15px;
+                box-sizing: border-box;
+                height: auto;
+
+                .arrowBox {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+
+                    i {
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+
+                        &.prev {
+                            transform: rotate(90deg);
+                            margin-right: 15px;
+                        }
+
+                        &.next {
+                            transform: rotate(-90deg);
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    color: $font-color_1;
+                    text-align: center;
+
+                    span {
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
 }

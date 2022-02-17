@@ -106,6 +106,11 @@ $(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.plsGo').addClass('display');
     })
+
+    $(".forActive .check,.forHistory .check").click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter,.bettingDetail').addClass('display');
+    })
 })
 //請先登入
 function unlogin(){

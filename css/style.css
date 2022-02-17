@@ -132,16 +132,7 @@ footer li.active .center_ic {
   background-size: 100%;
 }
 
-.jumpWindow .title .close_2 {
-  background: url("../images/icon/svg/close2.svg") no-repeat;
-  background-size: 100%;
-}
-
-.jumpWindow.loginWindow .title .icon {
-  background: url("../images/icon/svg/sign_in_w.svg") no-repeat;
-  background-size: 100%;
-}
-
+.jumpWindow.loginWindow .title .icon,
 .jumpWindow.registerWindow .title .icon {
   background: url("../images/icon/svg/sign_in_w.svg") no-repeat;
   background-size: 100%;
@@ -245,6 +236,11 @@ header .refresh_ic {
 
 .walletWrap .openBtn .db_arrow {
   background: url("../images/icon/svg/unfold.svg") no-repeat;
+  background-size: 100%;
+}
+
+.walletWrap .refresh_ic {
+  background: url("../images/icon/svg/refresh.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -543,19 +539,21 @@ header .editBtn {
   background-size: 100%;
 }
 
-.walletList .forPlatform .smallInfo {
-  background: url("../images/icon/svg/information.svg") no-repeat;
-  background-size: 100%;
-}
-
-.transWrap .forPlatform .smallInfo {
-  background: url("../images/icon/svg/information.svg") no-repeat;
-  background-size: 100%;
-}
-
+.walletList .forPlatform .smallInfo,
+.transWrap .forPlatform .smallInfo,
 .withWrap .detailBox .smallInfo {
   background: url("../images/icon/svg/information.svg") no-repeat;
   background-size: 100%;
+}
+
+.vipDetail .finger {
+  background: url("../images/icon/finger.png") no-repeat center;
+  background-size: contain;
+}
+
+.jumpWindow.bettingDetail .pageBox .arrowBox i {
+  background: url("../images/icon/svg/unfold.svg") no-repeat center;
+  background-size: contain;
 }
 
 header .logo {
@@ -2116,6 +2114,90 @@ html body .filter .accWindow .content .smallBox button:active, html body .filter
 html body .filter .accWindow .content .smallBox button:nth-of-type(3n), html body .filter .platWindow .content .smallBox button:nth-of-type(3n) {
   margin-right: 0;
 }
+html body .filter .bettingDetail {
+  width: 92.27vw;
+  height: calc(100vh - 60px);
+  background: #ffffff;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  display: none;
+}
+html body .filter .bettingDetail.display {
+  display: block;
+}
+html body .filter .bettingDetail .content {
+  width: 92%;
+  height: auto;
+  margin: 0 auto;
+}
+html body .filter .bettingDetail .content .smallTitle {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #e11515;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+html body .filter .bettingDetail .content .mainCnt {
+  width: 100%;
+  height: calc(100vh - 235px);
+  padding: 5px 5px 40px;
+  box-sizing: border-box;
+  background: #f2f3f3;
+  border-bottom: solid 1px #cccccc;
+  overflow-y: auto;
+}
+html body .filter .bettingDetail .content .mainCnt .noData {
+  width: 100%;
+  height: 80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-weight: bold;
+  font-size: 16px;
+}
+html body .filter .bettingDetail .content .mainCnt .noData.display {
+  display: flex;
+}
+html body .filter .bettingDetail .content .pageBox {
+  width: 100%;
+  padding-top: 15px;
+  box-sizing: border-box;
+  height: auto;
+}
+html body .filter .bettingDetail .content .pageBox .arrowBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+html body .filter .bettingDetail .content .pageBox .arrowBox i {
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+html body .filter .bettingDetail .content .pageBox .arrowBox i.prev {
+  transform: rotate(90deg);
+  margin-right: 15px;
+}
+html body .filter .bettingDetail .content .pageBox .arrowBox i.next {
+  transform: rotate(-90deg);
+  margin-left: 15px;
+}
+html body .filter .bettingDetail .content .pageBox p {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #999999;
+  text-align: center;
+}
+html body .filter .bettingDetail .content .pageBox p span {
+  padding: 0 5px;
+}
 @media only screen and (max-width: 320px) {
   html body .homeCenter .gameList div {
     justify-content: center !important;
@@ -2597,18 +2679,143 @@ html body .walletWrap .walletList {
   background: #ffffff;
 }
 html body .walletWrap .walletList .forActive,
-html body .walletWrap .walletList .forHistory,
-html body .walletWrap .walletList .forPlatform {
+html body .walletWrap .walletList .forHistory {
   padding-bottom: 15px;
   display: none;
 }
 html body .walletWrap .walletList .forActive.display,
-html body .walletWrap .walletList .forHistory.display,
-html body .walletWrap .walletList .forPlatform.display {
+html body .walletWrap .walletList .forHistory.display {
   display: block;
 }
 html body .walletWrap .walletList .forActive .title,
-html body .walletWrap .walletList .forHistory .title,
+html body .walletWrap .walletList .forHistory .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 8px 15px 0;
+  margin-bottom: 11px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ad8047;
+  font-weight: bold;
+}
+html body .walletWrap .walletList .forActive .title .refresh_ic,
+html body .walletWrap .walletList .forHistory .title .refresh_ic {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+html body .walletWrap .walletList .forActive .pointBox,
+html body .walletWrap .walletList .forHistory .pointBox {
+  width: 92.27vw;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 0 auto 14px;
+  background: #ffffff;
+  box-shadow: 0 0 5px 0 #c8c8c880;
+}
+html body .walletWrap .walletList .forActive .pointBox .smallTitle,
+html body .walletWrap .walletList .forHistory .pointBox .smallTitle {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-bottom: solid 1px #e11515;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0 17px;
+}
+html body .walletWrap .walletList .forActive .pointBox .barBox,
+html body .walletWrap .walletList .forHistory .pointBox .barBox {
+  width: 88vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 20px 15px;
+  background: #fcf9f3;
+  border-radius: 3px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+html body .walletWrap .walletList .forActive .pointBox .barBox .not,
+html body .walletWrap .walletList .forHistory .pointBox .barBox .not {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #808080;
+}
+html body .walletWrap .walletList .forActive .pointBox ul,
+html body .walletWrap .walletList .forHistory .pointBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li,
+html body .walletWrap .walletList .forHistory .pointBox ul li {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 12px 0 0 16px;
+  display: flex;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li p,
+html body .walletWrap .walletList .forHistory .pointBox ul li p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #595757;
+  font-weight: bold;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li p:nth-of-type(1),
+html body .walletWrap .walletList .forHistory .pointBox ul li p:nth-of-type(1) {
+  margin-right: 20px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 20px 14px 10px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button {
+  width: 41.33vw;
+  height: 8.27vw;
+  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  border: solid 1px #cca172;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 1vw;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button:active, html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button.active,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button:active,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button.active {
+  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button.check,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button.check {
+  background: #ffffff;
+  border: solid 1px #cfa678;
+  font-size: 13px;
+  font-weight: bold;
+  color: #cfa678;
+  border-radius: 3px;
+  font-size: 13px;
+}
+html body .walletWrap .walletList .forPlatform {
+  padding-bottom: 15px;
+  display: none;
+}
+html body .walletWrap .walletList .forPlatform.display {
+  display: block;
+}
 html body .walletWrap .walletList .forPlatform .title {
   display: flex;
   align-items: center;
@@ -2623,8 +2830,6 @@ html body .walletWrap .walletList .forPlatform .title {
   color: #ad8047;
   font-weight: bold;
 }
-html body .walletWrap .walletList .forActive .title button,
-html body .walletWrap .walletList .forHistory .title button,
 html body .walletWrap .walletList .forPlatform .title button {
   width: 18.93vw;
   height: 6.13vw;
@@ -2637,15 +2842,9 @@ html body .walletWrap .walletList .forPlatform .title button {
   letter-spacing: 1px;
   font-size: 12px;
 }
-html body .walletWrap .walletList .forActive .title button:active, html body .walletWrap .walletList .forActive .title button.active,
-html body .walletWrap .walletList .forHistory .title button:active,
-html body .walletWrap .walletList .forHistory .title button.active,
-html body .walletWrap .walletList .forPlatform .title button:active,
-html body .walletWrap .walletList .forPlatform .title button.active {
+html body .walletWrap .walletList .forPlatform .title button:active, html body .walletWrap .walletList .forPlatform .title button.active {
   background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 }
-html body .walletWrap .walletList .forActive ul,
-html body .walletWrap .walletList .forHistory ul,
 html body .walletWrap .walletList .forPlatform ul {
   display: flex;
   flex-wrap: wrap;
@@ -2655,13 +2854,9 @@ html body .walletWrap .walletList .forPlatform ul {
   padding: 0 3.6vw;
   overflow: hidden;
 }
-html body .walletWrap .walletList .forActive ul.active,
-html body .walletWrap .walletList .forHistory ul.active,
 html body .walletWrap .walletList .forPlatform ul.active {
   max-height: none;
 }
-html body .walletWrap .walletList .forActive ul li,
-html body .walletWrap .walletList .forHistory ul li,
 html body .walletWrap .walletList .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
@@ -2671,13 +2866,9 @@ html body .walletWrap .walletList .forPlatform ul li {
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
-html body .walletWrap .walletList .forActive ul li:nth-of-type(3n),
-html body .walletWrap .walletList .forHistory ul li:nth-of-type(3n),
 html body .walletWrap .walletList .forPlatform ul li:nth-of-type(3n) {
   margin-right: 0;
 }
-html body .walletWrap .walletList .forActive ul li div,
-html body .walletWrap .walletList .forHistory ul li div,
 html body .walletWrap .walletList .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
@@ -2686,8 +2877,6 @@ html body .walletWrap .walletList .forPlatform ul li div {
   display: flex;
   align-items: center;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   display: block;
   width: 18px;
@@ -2697,23 +2886,13 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   opacity: 0;
   pointer-events: none;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo.display,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo.display,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo.display {
   opacity: 1;
   pointer-events: visible;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo.active .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo:hover .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo:active .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo.active .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
   display: block;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
@@ -2728,8 +2907,6 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   bottom: -30px;
   white-space: nowrap;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo .inner::before,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner::before,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
   content: "";
   position: absolute;
@@ -2742,16 +2919,12 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::befo
   border-width: 0 4px 6px 4px;
   border-color: #cfa678 transparent;
 }
-html body .walletWrap .walletList .forActive ul li p,
-html body .walletWrap .walletList .forHistory ul li p,
 html body .walletWrap .walletList .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
   color: #000000;
   font-weight: bold;
 }
-html body .walletWrap .walletList .forActive .openBtn,
-html body .walletWrap .walletList .forHistory .openBtn,
 html body .walletWrap .walletList .forPlatform .openBtn {
   width: 100%;
   display: flex;
@@ -2759,8 +2932,6 @@ html body .walletWrap .walletList .forPlatform .openBtn {
   height: auto;
   margin-top: 15px;
 }
-html body .walletWrap .walletList .forActive .openBtn div,
-html body .walletWrap .walletList .forHistory .openBtn div,
 html body .walletWrap .walletList .forPlatform .openBtn div {
   font-size: 13px;
   letter-spacing: 1px;
@@ -2769,13 +2940,9 @@ html body .walletWrap .walletList .forPlatform .openBtn div {
   display: flex;
   align-items: center;
 }
-html body .walletWrap .walletList .forActive .openBtn div.active .db_arrow,
-html body .walletWrap .walletList .forHistory .openBtn div.active .db_arrow,
 html body .walletWrap .walletList .forPlatform .openBtn div.active .db_arrow {
   transform: rotate(180deg);
 }
-html body .walletWrap .walletList .forActive .openBtn div .db_arrow,
-html body .walletWrap .walletList .forHistory .openBtn div .db_arrow,
 html body .walletWrap .walletList .forPlatform .openBtn div .db_arrow {
   display: block;
   width: 12px;
@@ -4586,6 +4753,75 @@ html body .vipDetail .lvWrap .list .right ul li p {
   box-sizing: border-box;
   padding: 0 15px;
 }
+html body .vipDetail .lvWrap .list .right .finger {
+  display: block;
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  right: 4vw;
+  bottom: 2vw;
+  animation: disappear 4s ease 0s infinite;
+}
+html body .vipDetail .lvWrap .list .right .finger::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -20%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #e11515;
+  border-width: 6px 8px 6px 0;
+  animation: moveL 2s ease 0s infinite;
+}
+html body .vipDetail .lvWrap .list .right .finger::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 12%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #e11515;
+  border-width: 6px 0 6px 8px;
+  animation: moveR 2s ease 0s infinite;
+}
+@keyframes disappear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes moveL {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveR {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 html body .topList {
   width: 100%;
   height: auto;
@@ -5469,18 +5705,143 @@ html body .walletWrap .walletList {
   background: #ffffff;
 }
 html body .walletWrap .walletList .forActive,
-html body .walletWrap .walletList .forHistory,
-html body .walletWrap .walletList .forPlatform {
+html body .walletWrap .walletList .forHistory {
   padding-bottom: 15px;
   display: none;
 }
 html body .walletWrap .walletList .forActive.display,
-html body .walletWrap .walletList .forHistory.display,
-html body .walletWrap .walletList .forPlatform.display {
+html body .walletWrap .walletList .forHistory.display {
   display: block;
 }
 html body .walletWrap .walletList .forActive .title,
-html body .walletWrap .walletList .forHistory .title,
+html body .walletWrap .walletList .forHistory .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 8px 15px 0;
+  margin-bottom: 11px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ad8047;
+  font-weight: bold;
+}
+html body .walletWrap .walletList .forActive .title .refresh_ic,
+html body .walletWrap .walletList .forHistory .title .refresh_ic {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+html body .walletWrap .walletList .forActive .pointBox,
+html body .walletWrap .walletList .forHistory .pointBox {
+  width: 92.27vw;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 0 auto 14px;
+  background: #ffffff;
+  box-shadow: 0 0 5px 0 #c8c8c880;
+}
+html body .walletWrap .walletList .forActive .pointBox .smallTitle,
+html body .walletWrap .walletList .forHistory .pointBox .smallTitle {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-bottom: solid 1px #e11515;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0 17px;
+}
+html body .walletWrap .walletList .forActive .pointBox .barBox,
+html body .walletWrap .walletList .forHistory .pointBox .barBox {
+  width: 88vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 20px 15px;
+  background: #fcf9f3;
+  border-radius: 3px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+html body .walletWrap .walletList .forActive .pointBox .barBox .not,
+html body .walletWrap .walletList .forHistory .pointBox .barBox .not {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #808080;
+}
+html body .walletWrap .walletList .forActive .pointBox ul,
+html body .walletWrap .walletList .forHistory .pointBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li,
+html body .walletWrap .walletList .forHistory .pointBox ul li {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 12px 0 0 16px;
+  display: flex;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li p,
+html body .walletWrap .walletList .forHistory .pointBox ul li p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #595757;
+  font-weight: bold;
+}
+html body .walletWrap .walletList .forActive .pointBox ul li p:nth-of-type(1),
+html body .walletWrap .walletList .forHistory .pointBox ul li p:nth-of-type(1) {
+  margin-right: 20px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 20px 14px 10px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button {
+  width: 41.33vw;
+  height: 8.27vw;
+  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  border: solid 1px #cca172;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 1vw;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button:active, html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button.active,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button:active,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button.active {
+  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+html body .walletWrap .walletList .forActive .pointBox .pointBtnBox button.check,
+html body .walletWrap .walletList .forHistory .pointBox .pointBtnBox button.check {
+  background: #ffffff;
+  border: solid 1px #cfa678;
+  font-size: 13px;
+  font-weight: bold;
+  color: #cfa678;
+  border-radius: 3px;
+  font-size: 13px;
+}
+html body .walletWrap .walletList .forPlatform {
+  padding-bottom: 15px;
+  display: none;
+}
+html body .walletWrap .walletList .forPlatform.display {
+  display: block;
+}
 html body .walletWrap .walletList .forPlatform .title {
   display: flex;
   align-items: center;
@@ -5495,8 +5856,6 @@ html body .walletWrap .walletList .forPlatform .title {
   color: #ad8047;
   font-weight: bold;
 }
-html body .walletWrap .walletList .forActive .title button,
-html body .walletWrap .walletList .forHistory .title button,
 html body .walletWrap .walletList .forPlatform .title button {
   width: 18.93vw;
   height: 6.13vw;
@@ -5509,15 +5868,9 @@ html body .walletWrap .walletList .forPlatform .title button {
   letter-spacing: 1px;
   font-size: 12px;
 }
-html body .walletWrap .walletList .forActive .title button:active, html body .walletWrap .walletList .forActive .title button.active,
-html body .walletWrap .walletList .forHistory .title button:active,
-html body .walletWrap .walletList .forHistory .title button.active,
-html body .walletWrap .walletList .forPlatform .title button:active,
-html body .walletWrap .walletList .forPlatform .title button.active {
+html body .walletWrap .walletList .forPlatform .title button:active, html body .walletWrap .walletList .forPlatform .title button.active {
   background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 }
-html body .walletWrap .walletList .forActive ul,
-html body .walletWrap .walletList .forHistory ul,
 html body .walletWrap .walletList .forPlatform ul {
   display: flex;
   flex-wrap: wrap;
@@ -5527,13 +5880,9 @@ html body .walletWrap .walletList .forPlatform ul {
   padding: 0 3.6vw;
   overflow: hidden;
 }
-html body .walletWrap .walletList .forActive ul.active,
-html body .walletWrap .walletList .forHistory ul.active,
 html body .walletWrap .walletList .forPlatform ul.active {
   max-height: none;
 }
-html body .walletWrap .walletList .forActive ul li,
-html body .walletWrap .walletList .forHistory ul li,
 html body .walletWrap .walletList .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
@@ -5543,13 +5892,9 @@ html body .walletWrap .walletList .forPlatform ul li {
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
-html body .walletWrap .walletList .forActive ul li:nth-of-type(3n),
-html body .walletWrap .walletList .forHistory ul li:nth-of-type(3n),
 html body .walletWrap .walletList .forPlatform ul li:nth-of-type(3n) {
   margin-right: 0;
 }
-html body .walletWrap .walletList .forActive ul li div,
-html body .walletWrap .walletList .forHistory ul li div,
 html body .walletWrap .walletList .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
@@ -5558,8 +5903,6 @@ html body .walletWrap .walletList .forPlatform ul li div {
   display: flex;
   align-items: center;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   display: block;
   width: 18px;
@@ -5569,23 +5912,13 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   opacity: 0;
   pointer-events: none;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo.display,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo.display,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo.display {
   opacity: 1;
   pointer-events: visible;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo.active .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo:hover .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo:active .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo.active .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner,
-html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
   display: block;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo .inner,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
@@ -5600,8 +5933,6 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   bottom: -30px;
   white-space: nowrap;
 }
-html body .walletWrap .walletList .forActive ul li div .smallInfo .inner::before,
-html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner::before,
 html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
   content: "";
   position: absolute;
@@ -5614,16 +5945,12 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::befo
   border-width: 0 4px 6px 4px;
   border-color: #cfa678 transparent;
 }
-html body .walletWrap .walletList .forActive ul li p,
-html body .walletWrap .walletList .forHistory ul li p,
 html body .walletWrap .walletList .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
   color: #000000;
   font-weight: bold;
 }
-html body .walletWrap .walletList .forActive .openBtn,
-html body .walletWrap .walletList .forHistory .openBtn,
 html body .walletWrap .walletList .forPlatform .openBtn {
   width: 100%;
   display: flex;
@@ -5631,8 +5958,6 @@ html body .walletWrap .walletList .forPlatform .openBtn {
   height: auto;
   margin-top: 15px;
 }
-html body .walletWrap .walletList .forActive .openBtn div,
-html body .walletWrap .walletList .forHistory .openBtn div,
 html body .walletWrap .walletList .forPlatform .openBtn div {
   font-size: 13px;
   letter-spacing: 1px;
@@ -5641,13 +5966,9 @@ html body .walletWrap .walletList .forPlatform .openBtn div {
   display: flex;
   align-items: center;
 }
-html body .walletWrap .walletList .forActive .openBtn div.active .db_arrow,
-html body .walletWrap .walletList .forHistory .openBtn div.active .db_arrow,
 html body .walletWrap .walletList .forPlatform .openBtn div.active .db_arrow {
   transform: rotate(180deg);
 }
-html body .walletWrap .walletList .forActive .openBtn div .db_arrow,
-html body .walletWrap .walletList .forHistory .openBtn div .db_arrow,
 html body .walletWrap .walletList .forPlatform .openBtn div .db_arrow {
   display: block;
   width: 12px;
@@ -5996,17 +6317,128 @@ html body .transWrap .subClass ul li:active, html body .transWrap .subClass ul l
   border-color: #ff6464;
   background: linear-gradient(to bottom, #c61515 0%, #df1515 100%);
 }
-html body .transWrap .forActive,
+html body .transWrap .forActive {
+  padding-bottom: 15px;
+  display: none;
+}
+html body .transWrap .forActive.display {
+  display: block;
+}
+html body .transWrap .forActive .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 8px 15px 0;
+  margin-bottom: 11px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ad8047;
+  font-weight: bold;
+}
+html body .transWrap .forActive .title .refresh_ic {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+html body .transWrap .forActive .pointBox {
+  width: 92.27vw;
+  height: auto;
+  padding-bottom: 30px;
+  margin: 0 auto 14px;
+  background: #ffffff;
+  box-shadow: 0 0 5px 0 #c8c8c880;
+}
+html body .transWrap .forActive .pointBox .smallTitle {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  border-bottom: solid 1px #e11515;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0 17px;
+}
+html body .transWrap .forActive .pointBox .barBox {
+  width: 88vw;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 20px 15px;
+  background: #fcf9f3;
+  border-radius: 3px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+html body .transWrap .forActive .pointBox .barBox .not {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #808080;
+}
+html body .transWrap .forActive .pointBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .transWrap .forActive .pointBox ul li {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 12px 0 0 16px;
+  display: flex;
+}
+html body .transWrap .forActive .pointBox ul li p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #595757;
+  font-weight: bold;
+}
+html body .transWrap .forActive .pointBox ul li p:nth-of-type(1) {
+  margin-right: 20px;
+}
+html body .transWrap .forActive .pointBox .pointBtnBox {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 20px 14px 10px;
+}
+html body .transWrap .forActive .pointBox .pointBtnBox button {
+  width: 41.33vw;
+  height: 8.27vw;
+  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  border: solid 1px #cca172;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 1vw;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+html body .transWrap .forActive .pointBox .pointBtnBox button:active, html body .transWrap .forActive .pointBox .pointBtnBox button.active {
+  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+html body .transWrap .forActive .pointBox .pointBtnBox button.check {
+  background: #ffffff;
+  border: solid 1px #cfa678;
+  font-size: 13px;
+  font-weight: bold;
+  color: #cfa678;
+  border-radius: 3px;
+  font-size: 13px;
+}
 html body .transWrap .forPlatform {
   padding-bottom: 15px;
   display: none;
   background: #ffffff;
 }
-html body .transWrap .forActive.display,
 html body .transWrap .forPlatform.display {
   display: block;
 }
-html body .transWrap .forActive .title,
 html body .transWrap .forPlatform .title {
   display: flex;
   align-items: center;
@@ -6021,7 +6453,6 @@ html body .transWrap .forPlatform .title {
   color: #ad8047;
   font-weight: bold;
 }
-html body .transWrap .forActive .title button,
 html body .transWrap .forPlatform .title button {
   width: 18.93vw;
   height: 6.13vw;
@@ -6034,12 +6465,9 @@ html body .transWrap .forPlatform .title button {
   letter-spacing: 1px;
   font-size: 12px;
 }
-html body .transWrap .forActive .title button:active, html body .transWrap .forActive .title button.active,
-html body .transWrap .forPlatform .title button:active,
-html body .transWrap .forPlatform .title button.active {
+html body .transWrap .forPlatform .title button:active, html body .transWrap .forPlatform .title button.active {
   background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 }
-html body .transWrap .forActive ul,
 html body .transWrap .forPlatform ul {
   display: flex;
   flex-wrap: wrap;
@@ -6049,11 +6477,9 @@ html body .transWrap .forPlatform ul {
   padding: 0 3.6vw;
   overflow: hidden;
 }
-html body .transWrap .forActive ul.active,
 html body .transWrap .forPlatform ul.active {
   max-height: none;
 }
-html body .transWrap .forActive ul li,
 html body .transWrap .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
@@ -6063,11 +6489,9 @@ html body .transWrap .forPlatform ul li {
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
 }
-html body .transWrap .forActive ul li:nth-of-type(3n),
 html body .transWrap .forPlatform ul li:nth-of-type(3n) {
   margin-right: 0;
 }
-html body .transWrap .forActive ul li div,
 html body .transWrap .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
@@ -6076,7 +6500,6 @@ html body .transWrap .forPlatform ul li div {
   display: flex;
   align-items: center;
 }
-html body .transWrap .forActive ul li div .smallInfo,
 html body .transWrap .forPlatform ul li div .smallInfo {
   display: block;
   width: 18px;
@@ -6086,18 +6509,13 @@ html body .transWrap .forPlatform ul li div .smallInfo {
   opacity: 0;
   pointer-events: none;
 }
-html body .transWrap .forActive ul li div .smallInfo.display,
 html body .transWrap .forPlatform ul li div .smallInfo.display {
   opacity: 1;
   pointer-events: visible;
 }
-html body .transWrap .forActive ul li div .smallInfo:hover .inner, html body .transWrap .forActive ul li div .smallInfo:active .inner, html body .transWrap .forActive ul li div .smallInfo.active .inner,
-html body .transWrap .forPlatform ul li div .smallInfo:hover .inner,
-html body .transWrap .forPlatform ul li div .smallInfo:active .inner,
-html body .transWrap .forPlatform ul li div .smallInfo.active .inner {
+html body .transWrap .forPlatform ul li div .smallInfo:hover .inner, html body .transWrap .forPlatform ul li div .smallInfo:active .inner, html body .transWrap .forPlatform ul li div .smallInfo.active .inner {
   display: block;
 }
-html body .transWrap .forActive ul li div .smallInfo .inner,
 html body .transWrap .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
@@ -6112,7 +6530,6 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner {
   bottom: -30px;
   white-space: nowrap;
 }
-html body .transWrap .forActive ul li div .smallInfo .inner::before,
 html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
   content: "";
   position: absolute;
@@ -6125,14 +6542,12 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
   border-width: 0 4px 6px 4px;
   border-color: #cfa678 transparent;
 }
-html body .transWrap .forActive ul li p,
 html body .transWrap .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
   color: #000000;
   font-weight: bold;
 }
-html body .transWrap .forActive .openBtn,
 html body .transWrap .forPlatform .openBtn {
   width: 100%;
   display: flex;
@@ -6140,7 +6555,6 @@ html body .transWrap .forPlatform .openBtn {
   height: auto;
   margin-top: 15px;
 }
-html body .transWrap .forActive .openBtn div,
 html body .transWrap .forPlatform .openBtn div {
   font-size: 13px;
   letter-spacing: 1px;
@@ -6149,11 +6563,9 @@ html body .transWrap .forPlatform .openBtn div {
   display: flex;
   align-items: center;
 }
-html body .transWrap .forActive .openBtn div.active .db_arrow,
 html body .transWrap .forPlatform .openBtn div.active .db_arrow {
   transform: rotate(180deg);
 }
-html body .transWrap .forActive .openBtn div .db_arrow,
 html body .transWrap .forPlatform .openBtn div .db_arrow {
   display: block;
   width: 12px;

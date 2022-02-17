@@ -57,10 +57,6 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     font-weight: bold;
     color: #ffffff;
     border-radius: 50%;
-
-    &:active,&.active {
-
-    }
 }
 
 //常用橘色漸層按鈕
@@ -86,10 +82,6 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     font-weight: bold;
     color: #cfa678;
     border-radius: 3px;
-
-    &:active,&.active {
-
-    }
 }
 @mixin buttonStyle_3_2 {
     background: none;
@@ -100,10 +92,6 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
-
-    &:active,&.active {
-
-    }
 }
 @mixin buttonStyle_3_3 {
     background: #ffffff;
@@ -114,10 +102,6 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
-
-    &:active,&.active {
-
-    }
 }
 @mixin buttonStyle_3_4 {
     background: #ffffff;
@@ -128,10 +112,6 @@ $linear_11: linear-gradient(to bottom, #ffe9f5 0%,#fffff2 100%);
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
-
-    &:active,&.active {
-
-    }
 }
 
 //slotPage 進入遊戲+試玩看看

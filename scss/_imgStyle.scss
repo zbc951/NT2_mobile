@@ -109,15 +109,8 @@ footer li.active .center_ic {
     background: url('../images/icon/svg/close.svg') no-repeat;
     background-size: 100%;
 }
-.jumpWindow .title .close_2 {
-    background: url('../images/icon/svg/close2.svg') no-repeat;
-    background-size: 100%;
-}
 //jumpWindow.login login_ic
-.jumpWindow.loginWindow .title .icon {
-    background: url('../images/icon/svg/sign_in_w.svg') no-repeat;
-    background-size: 100%;
-}
+.jumpWindow.loginWindow .title .icon,
 .jumpWindow.registerWindow .title .icon {
     background: url('../images/icon/svg/sign_in_w.svg') no-repeat;
     background-size: 100%;
@@ -217,6 +210,11 @@ header .refresh_ic {
 //wallet db_arrow
 .walletWrap .openBtn .db_arrow {
     background: url('../images/icon/svg/unfold.svg') no-repeat;
+    background-size: 100%;
+}
+//wallert refresh_ic
+.walletWrap .refresh_ic {
+    background: url('../images/icon/svg/refresh.svg') no-repeat;
     background-size: 100%;
 }
 
@@ -492,17 +490,23 @@ header .editBtn {
 }
 
 //新增i
-.walletList .forPlatform .smallInfo {
-    background: url('../images/icon/svg/information.svg') no-repeat;
-    background-size: 100%;
-}
-.transWrap .forPlatform .smallInfo {
-    background: url('../images/icon/svg/information.svg') no-repeat;
-    background-size: 100%;
-}
+.walletList .forPlatform .smallInfo,
+.transWrap .forPlatform .smallInfo,
 .withWrap .detailBox .smallInfo {
     background: url('../images/icon/svg/information.svg') no-repeat;
     background-size: 100%;
+}
+
+//finger
+.vipDetail .finger {
+    background: url('../images/icon/finger.png') no-repeat center;
+    background-size: contain;
+}
+
+//新增雙箭頭
+.jumpWindow.bettingDetail .pageBox .arrowBox i {
+    background: url('../images/icon/svg/unfold.svg') no-repeat center;
+    background-size: contain;
 }
 
 
