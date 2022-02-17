@@ -117,7 +117,7 @@
                         width: 30.66vw;
                         min-height: 16.53vw;
                         box-sizing: border-box;
-                        padding: 12px 0 0 11px;
+                        padding: 10px 0 0 11px;
                         margin: 0 0.26vw 0.26vw 0;
                         border: solid 1px $borderColor_1;
                         border-radius: 1.5vw;
@@ -131,6 +131,58 @@
                             letter-spacing: 1px;
                             color: $font-color_8;
                             font-weight: bold;
+                            display: flex;
+                            align-items: center;
+
+                            .smallInfo {
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                margin-left: 5px;
+                                position: relative;
+                                opacity: 0;
+                                pointer-events: none;
+        
+                                &.display {
+                                    opacity: 1;
+                                    pointer-events: visible;
+                                }
+        
+                                &:hover,&:active,&.active {
+        
+                                    .inner {
+                                        display: block;
+                                    }
+                                }
+        
+                                .inner {
+                                    display: none;
+                                    width: auto;
+                                    height: auto;
+                                    padding: 6px 18px;
+                                    color: $font-color_5;
+                                    background: $backgroundColor_6;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    bottom: -30px;
+                                    white-space: nowrap;
+        
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        top: -6px;
+                                        width: 0;
+                                        height: 0;
+                                        border-style: solid;
+                                        border-width: 0 4px 6px 4px;
+                                        border-color: $backgroundColor_6 transparent;
+                                    }
+                                }
+                            }
                         }
     
                         p {

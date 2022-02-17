@@ -543,6 +543,21 @@ header .editBtn {
   background-size: 100%;
 }
 
+.walletList .forPlatform .smallInfo {
+  background: url("../images/icon/svg/information.svg") no-repeat;
+  background-size: 100%;
+}
+
+.transWrap .forPlatform .smallInfo {
+  background: url("../images/icon/svg/information.svg") no-repeat;
+  background-size: 100%;
+}
+
+.withWrap .detailBox .smallInfo {
+  background: url("../images/icon/svg/information.svg") no-repeat;
+  background-size: 100%;
+}
+
 header .logo {
   width: 58px;
   height: 26px;
@@ -2665,7 +2680,7 @@ html body .walletWrap .walletList .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
   box-sizing: border-box;
-  padding: 12px 0 0 11px;
+  padding: 10px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
@@ -2682,13 +2697,64 @@ html body .walletWrap .walletList .forPlatform ul li div {
   letter-spacing: 1px;
   color: #595757;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
-html body .walletWrap .walletList .forActive ul li div i,
-html body .walletWrap .walletList .forHistory ul li div i,
-html body .walletWrap .walletList .forPlatform ul li div i {
+html body .walletWrap .walletList .forActive ul li div .smallInfo,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   display: block;
   width: 18px;
   height: 18px;
+  margin-left: 5px;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo.display,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo.display,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo.display {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo.active .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo:hover .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo:active .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo.active .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
+  display: block;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
+  display: none;
+  width: auto;
+  height: auto;
+  padding: 6px 18px;
+  color: #ffffff;
+  background: #cfa678;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  white-space: nowrap;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo .inner::before,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner::before,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 6px 4px;
+  border-color: #cfa678 transparent;
 }
 html body .walletWrap .walletList .forActive ul li p,
 html body .walletWrap .walletList .forHistory ul li p,
@@ -5486,7 +5552,7 @@ html body .walletWrap .walletList .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
   box-sizing: border-box;
-  padding: 12px 0 0 11px;
+  padding: 10px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
@@ -5503,13 +5569,64 @@ html body .walletWrap .walletList .forPlatform ul li div {
   letter-spacing: 1px;
   color: #595757;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
-html body .walletWrap .walletList .forActive ul li div i,
-html body .walletWrap .walletList .forHistory ul li div i,
-html body .walletWrap .walletList .forPlatform ul li div i {
+html body .walletWrap .walletList .forActive ul li div .smallInfo,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo {
   display: block;
   width: 18px;
   height: 18px;
+  margin-left: 5px;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo.display,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo.display,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo.display {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo:hover .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo:active .inner, html body .walletWrap .walletList .forActive ul li div .smallInfo.active .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo:hover .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo:active .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo.active .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:hover .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo:active .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo.active .inner {
+  display: block;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo .inner,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
+  display: none;
+  width: auto;
+  height: auto;
+  padding: 6px 18px;
+  color: #ffffff;
+  background: #cfa678;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  white-space: nowrap;
+}
+html body .walletWrap .walletList .forActive ul li div .smallInfo .inner::before,
+html body .walletWrap .walletList .forHistory ul li div .smallInfo .inner::before,
+html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 6px 4px;
+  border-color: #cfa678 transparent;
 }
 html body .walletWrap .walletList .forActive ul li p,
 html body .walletWrap .walletList .forHistory ul li p,
@@ -5817,6 +5934,7 @@ html body .transWrap .transBox .selectBox select {
   border: solid 1px #e6e6e6;
   padding-left: 15px;
   padding-left: 12vw;
+  font-size: 14px;
 }
 html body .transWrap .transBox .selectBox .smallWord {
   color: #cfa678;
@@ -5954,7 +6072,7 @@ html body .transWrap .forPlatform ul li {
   width: 30.66vw;
   min-height: 16.53vw;
   box-sizing: border-box;
-  padding: 12px 0 0 11px;
+  padding: 10px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
@@ -5969,6 +6087,57 @@ html body .transWrap .forPlatform ul li div {
   letter-spacing: 1px;
   color: #595757;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+html body .transWrap .forActive ul li div .smallInfo,
+html body .transWrap .forPlatform ul li div .smallInfo {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+}
+html body .transWrap .forActive ul li div .smallInfo.display,
+html body .transWrap .forPlatform ul li div .smallInfo.display {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .transWrap .forActive ul li div .smallInfo:hover .inner, html body .transWrap .forActive ul li div .smallInfo:active .inner, html body .transWrap .forActive ul li div .smallInfo.active .inner,
+html body .transWrap .forPlatform ul li div .smallInfo:hover .inner,
+html body .transWrap .forPlatform ul li div .smallInfo:active .inner,
+html body .transWrap .forPlatform ul li div .smallInfo.active .inner {
+  display: block;
+}
+html body .transWrap .forActive ul li div .smallInfo .inner,
+html body .transWrap .forPlatform ul li div .smallInfo .inner {
+  display: none;
+  width: auto;
+  height: auto;
+  padding: 6px 18px;
+  color: #ffffff;
+  background: #cfa678;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  white-space: nowrap;
+}
+html body .transWrap .forActive ul li div .smallInfo .inner::before,
+html body .transWrap .forPlatform ul li div .smallInfo .inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 6px 4px;
+  border-color: #cfa678 transparent;
 }
 html body .transWrap .forActive ul li p,
 html body .transWrap .forPlatform ul li p {
@@ -6120,7 +6289,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li {
   width: 30.66vw;
   min-height: 16.53vw;
   box-sizing: border-box;
-  padding: 12px 0 0 11px;
+  padding: 10px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #e6e6e6;
   border-radius: 1.5vw;
@@ -6133,6 +6302,50 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div {
   letter-spacing: 1px;
   color: #595757;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo.display {
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo:hover .inner, html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo:active .inner, html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo.active .inner {
+  display: block;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .inner {
+  display: none;
+  width: auto;
+  height: auto;
+  padding: 6px 18px;
+  color: #ffffff;
+  background: #cfa678;
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  white-space: nowrap;
+}
+html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 4px 6px 4px;
+  border-color: #cfa678 transparent;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
   margin-top: 10px;

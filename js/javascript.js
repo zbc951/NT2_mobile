@@ -101,6 +101,11 @@ $(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.plsGo2').addClass('display');
     })
+
+    $(".transWrap .check").click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter,.plsGo').addClass('display');
+    })
 })
 //請先登入
 function unlogin(){

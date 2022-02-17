@@ -492,8 +492,17 @@ header .editBtn {
 }
 
 //新增i
-.walletList .forPlatform li i {
-    
+.walletList .forPlatform .smallInfo {
+    background: url('../images/icon/svg/information.svg') no-repeat;
+    background-size: 100%;
+}
+.transWrap .forPlatform .smallInfo {
+    background: url('../images/icon/svg/information.svg') no-repeat;
+    background-size: 100%;
+}
+.withWrap .detailBox .smallInfo {
+    background: url('../images/icon/svg/information.svg') no-repeat;
+    background-size: 100%;
 }
 
 
