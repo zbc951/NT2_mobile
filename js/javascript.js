@@ -49,7 +49,7 @@ $(function(){
         $('.filter').removeClass('display');
     })
 
-    $('.loginBtn,.jumpWindow .close_2').click(function(){
+    $('.loginBtn').click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.loginWindow').addClass('display');
     })
@@ -169,7 +169,7 @@ $(function(){
 
         $('footer li:nth-of-type(2)').attr('onclick',"window.location.href='./html/event.html'");
         $('footer li:nth-of-type(3)').attr('onclick',"window.location.href='./html/wallet.html'");
-        $('footer li:nth-of-type(4)').attr('onclick',"window.location.href='./html/help_new.html'");
+        $('footer li:nth-of-type(4)').attr('onclick',"window.location.href='./html/help_often_contact.html'");
         $('footer li:nth-of-type(5)').attr('onclick',"window.location.href='./html/member.html'");
     })
 })

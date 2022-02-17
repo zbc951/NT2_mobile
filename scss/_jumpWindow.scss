@@ -226,32 +226,15 @@
 
     //忘記密碼
     .forgetWindow {
-        width: 87.2vw;
+        width: 92.27vw;
         height: auto;
         background: $backgroundColor_2;
         border-radius: 1.5vw;
         display: none;
+        overflow: hidden;
 
         &.display {
             display: block;
-        }
-
-        .title {
-            background: none;
-
-            p {
-                color: $font-color_1;
-                font-size: 14px;
-            }
-
-            .close_2 {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 15px;
-                width: 15px;
-                height: 15px;
-            }
         }
 
         form {
