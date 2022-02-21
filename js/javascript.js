@@ -464,12 +464,21 @@ $(function(){
     })
 
     $(".depList li:eq(0)").click(function(){
+        $(".depContent").removeClass("display");
         $(".depContent.card").addClass("display");
-        $(".depContent.card").siblings().removeClass("display");
     })
     $(".depList li:eq(1)").click(function(){
+        $(".depContent").removeClass("display");
         $(".depContent.atm").addClass("display");
-        $(".depContent.atm").siblings().removeClass("display");
+    })
+
+    $(".depContent.card .check").click(function(){
+        $(".depList,.depContent").removeClass("display");
+        $(".depContent.already").addClass("display");
+    })
+    $(".depContent.already .change").click(function(){
+        $(".depContent").removeClass("display");
+        $(".depList,.depContent.card").addClass("display");
     })
 })
 

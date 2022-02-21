@@ -13,6 +13,12 @@
         background: $backgroundColor_2;
         padding: 10px 15px 15px;
         margin-bottom: 10px;
+        display: none;
+        box-sizing: border-box;
+
+        &.display {
+            display: block;
+        }
 
         .title {
             font-size: 15px;
@@ -141,6 +147,88 @@
             height: 42px;
             @include buttonStyle_2;
             margin-top: 20px;
+        }
+
+        &.already {
+            
+            .title {
+                color: $font-color_3;
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $font-color_12;
+
+                        &.smallTitle {
+                            color: $font-color_8;
+                            margin-right: 30px;
+                        }
+
+                        button {
+                            width: 12.27vw;
+                            height: 7.73vw;
+                            margin-left: 10px;
+
+                            &.copy {
+                                @include buttonStyle_3;
+                                font-size: 14px;
+                            }
+
+                            &.change {
+                                @include buttonStyle_2;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .checkBox {
+                        width: 95%;
+                        height: auto;
+                        background: $backgroundColor_8;
+                        border: solid 1px $borderColor_5;
+                        color: $font-color_6;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        font-weight: bold;
+                        padding: 15px 0;
+                        flex-direction: column;
+                        margin: 0 auto;
+
+                        p {
+                            color: $font-color_3;
+                            display: flex;
+                            align-items: center;
+
+                            &:nth-of-type(1) {
+                                font-size: 38px;
+                                margin-bottom: 10px;
+                                color: $font-color_12;
+                            }
+                        }
+                    }
+
+                    .check {
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
 

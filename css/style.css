@@ -5990,6 +5990,11 @@ html body .depositWrap .depList {
   background: #ffffff;
   padding: 10px 15px 15px;
   margin-bottom: 10px;
+  display: none;
+  box-sizing: border-box;
+}
+html body .depositWrap .depList.display {
+  display: block;
 }
 html body .depositWrap .depList .title {
   font-size: 15px;
@@ -6139,6 +6144,87 @@ html body .depositWrap .depContent .check {
 }
 html body .depositWrap .depContent .check:active, html body .depositWrap .depContent .check.active {
   background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+html body .depositWrap .depContent.already .title {
+  color: #e11515;
+}
+html body .depositWrap .depContent.already ul {
+  width: 100%;
+  height: auto;
+}
+html body .depositWrap .depContent.already ul li {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+html body .depositWrap .depContent.already ul li p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+html body .depositWrap .depContent.already ul li p.smallTitle {
+  color: #595757;
+  margin-right: 30px;
+}
+html body .depositWrap .depContent.already ul li p button {
+  width: 12.27vw;
+  height: 7.73vw;
+  margin-left: 10px;
+}
+html body .depositWrap .depContent.already ul li p button.copy {
+  background: #ffffff;
+  border: solid 1px #cfa678;
+  font-size: 13px;
+  font-weight: bold;
+  color: #cfa678;
+  border-radius: 3px;
+  font-size: 14px;
+}
+html body .depositWrap .depContent.already ul li p button.change {
+  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  border: solid 1px #cca172;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 1vw;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+html body .depositWrap .depContent.already ul li p button.change:active, html body .depositWrap .depContent.already ul li p button.change.active {
+  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+}
+html body .depositWrap .depContent.already ul li .checkBox {
+  width: 95%;
+  height: auto;
+  background: #fcf9f3;
+  border: solid 1px #cca172;
+  color: #666666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 15px 0;
+  flex-direction: column;
+  margin: 0 auto;
+}
+html body .depositWrap .depContent.already ul li .checkBox p {
+  color: #e11515;
+  display: flex;
+  align-items: center;
+}
+html body .depositWrap .depContent.already ul li .checkBox p:nth-of-type(1) {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+html body .depositWrap .depContent.already ul li .check {
+  margin: 0;
 }
 html body .depositWrap .remindBox {
   width: 92.27vw;
